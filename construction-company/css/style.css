@@ -1,6 +1,6 @@
 :root {
-    --font-family-montserrat: "Montserrat", sans-serif;
-    --font-family-source-sans: "Source Sans 3", sans-serif;
+    --font-family-primary: "Montserrat", sans-serif;
+    --font-family-secondary: "Source Sans 3", sans-serif;
     --font-family-martel-sans: "Martel Sans", sans-serif;
 }
 
@@ -32,7 +32,7 @@ li {
 
 .top-social-section {
     color: #c8c8c8;
-    font-family: var(--font-family-source-sans);
+    font-family: var(--font-family-secondary);
     font-size: 14px;
     padding: 10px 0px;
 }
@@ -105,9 +105,9 @@ li {
 /* ----------------- Navigation Section ----------------- */
 
 .navigation-section {
-    background-color: rgb(171, 171, 248);
     padding: 30px 0px;
-    font-family: var(--font-family-montserrat);
+    font-family: var(--font-family-primary);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .logo a {
@@ -127,16 +127,221 @@ li {
     gap: 20px;
 }
 
-.nav-area ul {
+.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.nav-area ul li a {
+.nav-menu li a {
     text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li:hover a {
+    color: #edc403;
+}
+
+.mobile-menu {
+	display:none;
+}
+
+.slicknav_menu {
+    padding: 0;
+    background-color: transparent;
+}
+
+.slicknav_nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 175%;
+    background-color: #edc403;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.slicknav_nav a {
+    font-size: 16px;
     font-weight: 500;
+    color: #000;
+}
+
+.slicknav_nav a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+	/* #menu is the original menu */
+	.nav-menu {
+		display:none;
+	}
+	
+	 .mobile-menu {
+		display:block;
+	}
 }
 
 /* ----------------- Navigation Section ----------------- */
+
+
+/* ----------------- Hero Section ----------------- */
+.hero-section-content {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 150px 0px;
+}
+
+.small-title {
+    font-size: 32px;
+    font-weight: 100;
+}
+.large-title {
+    font-size: 70px;
+    padding: 10px 0px;
+}
+
+.arrow-icon-image {
+    width: 65px;
+}
+
+/* ----------------- Hero Section ----------------- */
+
+
+/* ----------------- About Section Section ----------------- */
+.about-section-content-white,
+.about-section-content-yellow {
+    padding: 130px 75px 70px 60px;
+}
+
+.about-section-content-white h6,
+.about-section-content-yellow h6 {
+    text-transform: uppercase;
+    font-family: var(--font-family-primary);
+    font-size: 24px;
+    position: relative;
+}
+
+.about-section-content-white h6::after,
+.about-section-content-yellow h6::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    mix-blend-mode: darken;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+
+.about-section-content-white h6::after {
+    background-color: #edc403;
+}
+
+.about-section-content-yellow h6::after {
+    background-color: #000;
+}
+
+.about-section-content-white p,
+.about-section-content-yellow p {
+    text-transform: uppercase;
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    padding-top: 25px;
+}
+
+.about-section-wrap {
+    position: relative;
+}
+
+.about-bottom-img {
+    position: absolute;
+    bottom: 0;
+    height: 15px;
+}
+/* ----------------- About Section Section ----------------- */
+
+
+/* ----------------- Experience Section ----------------- */
+.experience-section {
+    padding: 80px 0px;
+}
+
+.heading-right-content,
+.heading-left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 40px;
+}
+
+.heading-left-content h4 {
+    font-size: 50px;
+    font-family: var(--font-family-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.heading-left-content h4::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    mix-blend-mode: darken;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    background-color: #edc403;
+}
+
+.heading-left-content p {
+    font-size: 18px;
+    line-height: 35px;
+    font-family: var(--font-family-primary);
+}
+
+.heading-right-content p {
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    text-align: justify;
+}
+
+.read-more {
+    padding: 6px 24px;
+    display: inline-block;
+    background: #edc403;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.experience-card-wrap {
+    margin-top: 100px;
+}
+
+.experience-card {
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #0000005d;
+    transition: all .2s ease-in-out;
+}
+
+.experience-card:hover {
+    background-color: #f2f1f1;
+}
+
+.experience-card-content h5 {
+    font-family: var(--font-family-secondary);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.experience-card-content p {
+    font-family: var(--font-family-martel-sans);
+    font-size: 15px;
+}
+/* ----------------- Experience Section ----------------- */
+

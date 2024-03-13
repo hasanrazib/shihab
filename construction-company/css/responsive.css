@@ -3,6 +3,7 @@
 
 
 
+
 }
 
 
@@ -16,6 +17,17 @@
         justify-content: center;
     }
 
+    .large-title {
+        font-size: 40px;
+    }
+    .arrow-icon-image {
+        width: 45px;
+    }
+
+    .small-title {
+        font-size: 26px;
+    }
+
 }
 /* Mobile Layout: 320px. */
 
@@ -26,6 +38,17 @@
     }
     .social-links {
         justify-content: center;
+    }
+
+    .large-title {
+        font-size: 30px;
+    }
+    .arrow-icon-image {
+        width: 35px;
+    }
+
+    .small-title {
+        font-size: 22px;
     }
 
 }

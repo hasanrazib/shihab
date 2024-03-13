@@ -1,0 +1,185 @@
+/************IPad**************/
+@media only screen and (min-width: 992px) and (max-width: 1366px) {
+    body {
+        /* background-color: yellow; */
+    }
+
+    .nav-section {
+        padding: 20px 0px;
+    }
+    .nav-bar ul li a {
+        font-size: 14px;
+    }
+    .banner-text {
+        padding: 15px;
+        font-size: 40px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        font-size: 40px;
+        width: 30px;
+        height: 38px;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        /* background-color: tomato; */
+    }
+    
+    .banner-text {
+        font-size: 35px;
+        bottom: -16%;
+    }
+
+    .heading h5 {
+        font-size: 18px;
+    }
+
+    .heading p {
+        font-size: 14px;
+    }
+
+    .banner-image {
+        height: 300px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        font-size: 40px;
+        width: 30px;
+        height: 38px;
+    }
+/* Mobile Layout: 320px. */
+}
+@media only screen and (max-width: 767px) {
+    body {
+        /* background-color: dodgerblue; */
+    }
+
+    /* .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
+    } */
+
+
+    .contact-card {
+        gap: 20px;
+        padding: 55px 30px;
+    }
+    .contact-card span {
+        /* font-size: 16px; */
+    }
+    .contact-card h5 {
+        font-size: 25px;
+    }
+
+    .social {
+        height: 25px;
+    }
+
+    .card-item {
+        text-align: center;
+    }
+
+    .contact-item span {
+        font-size: 14px;
+    }
+    .modal-card-close-btn {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        width: 27px;
+        height: 27px;
+    }    
+
+    .modal-item-content h5 {
+        font-size: 17px;
+    }
+    .banner-text {
+        background-color: var(--bg-color-secondary);
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 700;
+        color: #fff;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .title {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+    
+    .nav-section{
+        padding: 15px 0px;
+    }
+
+    .banner-image {
+        height: 240px;
+    }
+    .section-padding {
+        padding: 40px 0px;
+    }
+    
+    .slicknav_nav{
+        /* left: unset; */
+        right: 0;
+        width: 100%;
+    }
+    
+    .heading h5 {
+        font-size: 18px;
+    }
+
+    .heading p {
+        font-size: 14px;
+    }
+
+    .know-more-btn {
+        text-align: center;
+        margin: 0;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 579px) and (max-width: 767px) {
+    body {
+        /* background-color: red; */
+    }
+
+    .banner-text {
+        font-size: 23px;
+    }
+
+    .footer-lists {
+        flex-direction: row;
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        font-size: 31px;
+        width: 30px;
+        height: 36px;
+    }
+
+    .slicknav_nav{
+        right: 0;
+        left: unset;
+        width: 50%;
+    }
+
+}
