@@ -191,17 +191,24 @@ li {
 .hero-section-content {
     text-align: center;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 150px 0px;
 }
 
 .small-title {
     font-size: 32px;
     font-weight: 100;
+    text-transform: uppercase;
+}
+.mid-title {
+    font-size: 42px;
+    padding: 5px 0px;
+    text-transform: uppercase;
 }
 .large-title {
     font-size: 70px;
     padding: 10px 0px;
+    text-transform: uppercase;
 }
 
 .arrow-icon-image {
@@ -226,17 +233,20 @@ li {
 }
 
 .about-section-content-white h6::after,
-.about-section-content-yellow h6::after {
+.about-section-content-yellow h6::after,
+.skill-content h3::after,  
+.mission-content h3::after  {
     content: '';
     width: 50px;
     height: 2px;
-    mix-blend-mode: darken;
     position: absolute;
     left: 0;
     bottom: -18px;
 }
 
-.about-section-content-white h6::after {
+.about-section-content-white h6::after,
+.skill-content h3::after,
+.mission-content h3::after {
     background-color: #edc403;
 }
 
@@ -309,12 +319,13 @@ li {
     text-align: justify;
 }
 
-.read-more {
+.yellow-btn {
     padding: 6px 24px;
     display: inline-block;
     background: #edc403;
     font-weight: 500;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 
@@ -325,8 +336,9 @@ li {
 .experience-card {
     text-align: center;
     padding: 50px;
-    border: 1px solid #0000005d;
+    /* border: 1px solid #0000005d; */
     transition: all .2s ease-in-out;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .experience-card:hover {
@@ -344,4 +356,161 @@ li {
     font-size: 15px;
 }
 /* ----------------- Experience Section ----------------- */
+
+
+/* ----------------- Construction Project Section ----------------- */
+
+
+.construction-project-content {
+    text-align: center;
+}
+.construction-project-content h1 {
+    color: #edc403;
+    font-family: var(--font-family-primary);
+}
+
+.contruction-project-section {
+    padding: 120px 0px;
+}
+
+.construction-project-content h3 {
+    color: #fff;
+    font-family: var(--font-family-martel-sans);
+}
+
+/* ----------------- Construction Project Section ----------------- */
+
+
+
+/* ----------------- Skill and Mission Section ----------------- */
+.our-skill-section,
+.our-mission-section {
+    padding: 170px 0px;
+}
+
+.progress {
+    background-color: #000;
+}
+
+.progress-bar {
+    background-color: #edc403;
+}
+
+.skill-content h3,
+.mission-content h3 {
+    position: relative;
+    font-family: var(--font-family-primary);
+    font-weight: 700;
+}
+
+.skill-content p {
+    padding-top: 30px;
+    text-align: justify;
+    font-family: var(--font-family-primary);
+    font-size: 17px;
+}
+
+.mission-content p {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 15px;
+}
+
+.mission-list li span {
+    background: #edc403;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-family: var(--font-family-primary);
+}
+
+.mission-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family-secondary);
+    font-size: 22px;
+    border: 1px solid #0000003e;
+    padding: 25px;
+}
+
+.mission-list li:not(:last-child) {
+    border-bottom: none;
+}
+
+/* ----------------- Skill and Mission Section ----------------- */
+
+
+/* ----------------- Team Section ----------------- */
+.team-section {
+    padding: 90px 0px;
+}
+.team-member img{
+    border-radius: 50%;
+}
+
+.team-member-content {
+    text-align: center;
+}
+
+.team-heading h4 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.team-heading h4{
+    position: relative;
+}
+
+.team-heading h4::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50% , 0);
+    background-color: #edc403;
+}
+
+.team-member-content h5 {
+    font-family: var(--font-family-primary);
+    font-size: 22px;
+    padding-top: 50px;
+    color: #edc403;
+}
+.team-member-content h6,
+.team-member-content p {
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+}
+.team-member-content p {
+    color: #0000005a;
+    padding: 10px 0px 25px 0px;
+}
+
+.team-member-links {
+}
+
+.team-member-content a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.owl-carousel .owl-item img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* ----------------- Team Section ----------------- */
 
