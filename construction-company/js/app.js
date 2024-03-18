@@ -19,7 +19,7 @@ $('#team').owlCarousel({
             items:3
         },
         1000:{
-            items:5
+            items:3
         }
     }
 })
