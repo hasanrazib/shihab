@@ -620,6 +620,82 @@ padding: 50px 0px;
     padding: 50px 0px;
     background-color: #8b8d91;
 }
+
+.vacancy-heading h3 {
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.vacancy-heading h3::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: #edc403;
+}
+
+.nav-linked {
+    border: none;
+    font-family: var(--font-family-primary);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #d4d4d4;
+    transition: all .2s ease-in-out;
+    text-transform: capitalize;
+}
+
+.nav-linked.active {
+    background-color: #fff;
+}
+
+.tab-content {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.fancy-l {
+    display: inline-block;
+    background-color: #fbcf00;
+    padding: 10px 20px;
+    margin: 0px 10px 10px 0px;
+    font-family: var(--font-family-primary);
+    font-weight: 800;
+    font-size: 24px;
+    color: #000;
+}
+
+.vacancies-content-middle p{
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    color: #a4a4a4;
+    display: inline;
+}
+
+.vacancies-content-end p {
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    color: #a4a4a4;
+}
+
+
+.vacancies-content-end ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    color: #a4a4a4;
+    padding: 6px 0px;
+}
+
+.vacancies-content-end ul li::marker {
+    color: #000;
+}
+
 /* ----------------- Open Vacancy Section ----------------- */
 
 
@@ -861,6 +937,139 @@ span.tag-items {
 
 /* ----------------- Partner Section ----------------- */
 .partner-section {
-    padding: 80px 0px;
+    padding: 100px 0px;
 }
+.owl-carousel .owl-stage {
+    display: flex;
+  }
+
+ .owl-carousel .owl-item img {
+    width: auto;
+    height: 100%;
+  }
 /* ----------------- Partner Section ----------------- */
+
+
+/* ----------------- Construction Process Section ----------------- */
+.process-heading {
+    height: 100%;
+}
+
+.process-heading h5 {
+    text-transform: uppercase;
+    font-family: var(--font-family-primary);
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 30px;
+    padding-top: 130px;
+    padding-left: 50px;
+}
+
+.process-content {
+    height: 100%;
+    padding: 40px;
+}
+
+.process-content h4 {
+    font-family: var(--font-family-primary);
+    color: #ffc601;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.process-content h6 {
+    font-family: var(--font-family-primary);
+    font-size: 22px;
+    padding: 10px 0px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.process-content p {
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+}
+
+/* ----------------- Construction Process Section ----------------- */
+
+/* ----------------- Our Project Section Section ----------------- */
+.project-heading {
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.project-heading h4 {
+    font-family: var(--font-family-primary);
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.project-heading h4::after {
+    content: '';
+    position: absolute;
+    background-color: #edc403;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.project-heading p {
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.project-btn {
+    background-color: #29292b;
+    position: relative;
+    padding: 105px 0px;
+}
+
+.project-btn hr {
+    margin: 0;
+    color: #39393b;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+    border: 1.9px solid #39393b;
+}
+
+.project-btn a{
+    color: #fbcf00;
+    background-color: #39393b;
+    text-transform: uppercase;
+    font-family: var(--font-family-primary);
+    font-size: 15px;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
+
+.project-btn a:hover{
+    color: #fff;
+}
+
+.project-gallery{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* ----------------- Our Project Section Section ----------------- */
