@@ -109,7 +109,7 @@ html {
 /* ----------------- Navigation Section ----------------- */
 
 .navigation-section {
-    padding: 30px 0px;
+    padding: 25px 0px;
     font-family: var(--font-family-primary);
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
@@ -454,9 +454,6 @@ html {
 .team-section {
     padding: 90px 0px;
 }
-.team-member img{
-    border-radius: 50%;
-}
 
 .team-member-content {
     text-align: center;
@@ -508,8 +505,10 @@ html {
     margin-right: 8px;
 }
 
-.owl-carousel .owl-item img {
-    width: 60%;
+.owl-carousel .owl-item .team-member img{
+    border-radius: 50%;
+    max-width: 200px;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -617,7 +616,7 @@ padding: 50px 0px;
 
 /* ----------------- Open Vacancy Section ----------------- */
 .open-vacancy-section {
-    padding: 50px 0px;
+    padding: 80px 0px;
     background-color: #8b8d91;
 }
 
@@ -636,6 +635,11 @@ padding: 50px 0px;
     top: 120%;
     left: 0;
     background-color: #edc403;
+}
+
+.vacancy-nav {
+    display: flex;
+    gap: 2px;
 }
 
 .nav-linked {
@@ -943,7 +947,7 @@ span.tag-items {
     display: flex;
   }
 
- .owl-carousel .owl-item img {
+ .owl-carousel .owl-item .partner-image {
     width: auto;
     height: 100%;
   }
@@ -1071,5 +1075,65 @@ span.tag-items {
     grid-template-columns: repeat(5, 1fr);
 }
 
-
 /* ----------------- Our Project Section Section ----------------- */
+
+/* ----------------- Recent News Section Section ----------------- */
+.recent-news-section {
+    background-color: red;
+}
+
+
+.news-content-heading {
+    text-transform: uppercase;
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+
+.news-heading-date {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+}
+
+.recent-news-bottom-wrap {
+    background-color: #f5f5f5;
+}
+
+.recent-news-bottom {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.news-content {
+    padding: 50px 20px;
+}
+
+.news-content p{
+    font-family: var(--font-family-secondary);
+    font-size: 15px;
+}
+
+.recent-news-heading {
+    /* background-color: #29292b; */
+    background-image: url(../images/recent-news-heading-bd-image.png);
+    padding: 80px 0px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-family-primary);
+    
+}
+
+.recent-news-heading h5 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.recent-news-heading p{
+font-size: 15px;
+}
+/* ----------------- Recent News Section Section ----------------- */
