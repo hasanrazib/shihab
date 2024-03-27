@@ -48,7 +48,22 @@
     }
 
     .small-title {
-        font-size: 22px;
+        font-size: 18px;
+    }
+    .mid-title {
+        font-size: 32px;
+    }
+
+    .heading-left-content h4 {
+        font-size: 38px;
+    }
+
+    .project-btn a {
+        font-size: 10px;
+    }
+
+    .our-mission-section {
+        background-image: none;
     }
 
 }
