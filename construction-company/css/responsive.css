@@ -3,13 +3,12 @@
 
 
 
-
 }
 
 
 /* Tablet Layout: 768px. */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .address, .phone {
         text-align: center;
     }
@@ -41,7 +40,7 @@
     }
 
     .large-title {
-        font-size: 30px;
+        font-size: 28px;
     }
     .arrow-icon-image {
         width: 35px;
@@ -51,11 +50,11 @@
         font-size: 18px;
     }
     .mid-title {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .heading-left-content h4 {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .project-btn a {
@@ -64,6 +63,45 @@
 
     .our-mission-section {
         background-image: none;
+    }
+
+    .heading-right-content {
+        align-items: center;
+    }
+    .contact-content h3 {
+        font-size: 36px;
+    }
+
+    .process-content h6 {
+        font-size: 22px;
+    }
+
+    .process-content h4{
+        padding-bottom: 10px;
+        font-size: 45px;
+    }
+
+    .skill-content p {
+        font-size: 14px;
+    }
+
+    strong {
+        font-size: 14px;
+    }
+
+    .process-heading h5 {
+        padding: 55px 0px;
+        text-align: center;
+    }
+
+    .mission-list li {
+        font-size: 16px;
+    }
+
+    .mission-list li span {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 
 }
