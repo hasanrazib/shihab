@@ -1,6 +1,23 @@
+
+@media only screen and (min-width: 1367px) and (max-width: 1500px) {
+
+    .recent-news-bottom {
+        width: 100%;
+    }
+
+    .recent-news-bottom-wrap {
+        min-height: 750px;
+    }
+
+
+}
+
 /************IPad**************/
 @media only screen and (min-width: 992px) and (max-width: 1366px) {
 
+    .recent-news-bottom {
+        width: 100%;
+    }
 
 
 }
@@ -25,6 +42,9 @@
 
     .small-title {
         font-size: 26px;
+    }
+    .recent-news-bottom {
+        width: 100%;
     }
 
 }
@@ -104,13 +124,22 @@
         font-size: 16px;
     }
 
+    .recent-news-bottom {
+        width: 100%;
+    }
+    .recent-news-bottom-wrap {
+        min-height: 1000px;
+    }
+
 }
 /* Wide Mobile Layout: 480px. */
 
 @media only screen and (min-width: 579px) and (max-width: 767px) {
 
 
-
+    .recent-news-bottom-wrap {
+        min-height: 700px;
+    }
 
 
 }

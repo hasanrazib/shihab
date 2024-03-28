@@ -1168,15 +1168,15 @@ span.tag-items {
 
 .recent-news-bottom-wrap {
     background-color: #f5f5f5;
-    min-height: 500px;
+    min-height: 650px;
 }
 
 .recent-news-bottom {
-    max-width: 900px;
-    margin: 0 auto;
+    width: 50%;
+    /* margin: 0 auto; */
     position: absolute;
     left: 50%;
-    bottom: 50px;
+    top: 80%;
     transform: translate(-50%, 0);
 }
 
@@ -1197,17 +1197,19 @@ span.tag-items {
     background-image: url(../images/recent-news-heading-bd-image.png);
     padding: 125px 0px;
     color: white;
-    text-align: center;
     text-transform: uppercase;
     font-family: var(--font-family-primary);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    position: relative;
 }
 
 .recent-news-heading h5 {
     font-size: 32px;
     font-weight: 700;
+    text-align: center;
     position: relative;
 }
 
@@ -1222,9 +1224,10 @@ span.tag-items {
     background-color: #edc403;
 }
 
-.recent-news-heading p{
+.recent-news-heading > p{
     font-size: 15px;
     padding-top: 50px;
+    text-align: center;
     color: #b3b3b3;
 }
 
