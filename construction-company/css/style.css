@@ -143,8 +143,55 @@ html {
     font-weight: 600;
 }
 
-.nav-menu li:hover a {
+.nav-menu > li > a {
+    padding: 40px 0px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu > li:hover > a,
+.sub-menu > li:hover > a,
+.sub-sub-menu > li:hover > a {
     color: #edc403;
+}
+
+.sub-menu, .sub-sub-menu {
+    display: none;
+    animation: fadeIn .5s linear;
+}
+
+.sub-menu li {
+    padding: 10px;
+}
+
+.sub-menu li:hover {
+    background-color: #52555b;
+}
+
+.nav-menu li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    left: -10px;
+    top: 259.5%;
+    border: 1px solid #ebebeb;
+}
+
+.nav-menu li .sub-menu li:hover .sub-sub-menu {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    left: 100%;
+    top: 0;
+    border: 1px solid #ebebeb;
+}
+
+.nav-menu i {
+    padding-left: 15px;
 }
 
 .mobile-menu {
@@ -177,8 +224,13 @@ html {
     color: #fff;
 }
 
+.slicknav_nav .slicknav_row:hover {
+    background: unset;
+}
+
+
+
 @media screen and (max-width: 1000px) {
-	/* #menu is the original menu */
 	.nav-menu {
 		display:none;
 	}
@@ -186,6 +238,24 @@ html {
 	 .mobile-menu {
 		display:block;
 	}
+
+    .nav-right-icon {
+        display: none;
+    }
+
+    .nav-menu > li:hover > a,
+    .sub-menu > li:hover > a,
+    .sub-sub-menu > li:hover > a {
+        color: unset;
+    }
+
+    .sub-menu li:hover {
+        background-color: unset;
+    }
+
+    .sub-menu li {
+        padding: 0px;
+    }
 }
 
 /* ----------------- Navigation Section ----------------- */
@@ -1291,3 +1361,14 @@ span.tag-items {
     padding-bottom: 5px;
 }
 /* ----------------- Recent News Section Section ----------------- */
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
