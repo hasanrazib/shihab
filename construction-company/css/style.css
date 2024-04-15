@@ -194,6 +194,19 @@ html {
     padding-left: 15px;
 }
 
+.search-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-icon {
+
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
+
 .mobile-menu {
 	display:none;
 }
