@@ -102,6 +102,10 @@ html {
     text-align: center;
 }
 
+.accounts .join-now-btn:hover {
+    color: #fff;
+}
+
 /* ----------------- Top Social Section ----------------- */
 
 
@@ -186,7 +190,7 @@ html {
     background-color: #fff;
     width: 250px;
     left: 100%;
-    top: 0;
+    top: -1px;
     border: 1px solid #ebebeb;
 }
 
@@ -710,6 +714,10 @@ padding: 50px 0px;
     font-weight: 600;
     font-family: var(--font-family-primary);
     font-size: 14px;
+}
+
+.order-btn a:hover {
+    color: #fff;
 }
 
 .order-btn a i {
@@ -1384,4 +1392,8 @@ span.tag-items {
     100% {
         opacity: 1;
     }
+}
+
+.search-icon:hover{
+    cursor: pointer;
 }
