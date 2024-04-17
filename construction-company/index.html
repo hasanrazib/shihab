@@ -42,24 +42,21 @@
     This Section is Done
   -->
   <!-- Top Social Section -->
-  <section class="top-social-section" style="background-color: #29292b;">
-    <div class="container-xl">
-      <div class="row gy-2 align-items-center justify-content-center">
-
+  <section id="top" class="top-social-section" style="background-color: #29292b;">
+    <div class="container">
+      <div class="row gy-2 align-items-center">
         <!-- Address -->
-        <div class="col-xl-3 col-md-6- col-lg-3 col-sm-6">
+        <div class="col-xl-5 col-md-12 col-lg-5 col-sm-12 justify-content-center d-lg-flex gap-lg-5">
           <div class="address">
             <p> <i class="fa-solid fa-location-dot"></i> <span>19th Ave New York, NYv 95822, USA</span> </p>
           </div>
-        </div>
-        <!-- Phone -->
-        <div class="col-xl-2 col-md-6- col-lg-2 col-sm-6">
+          <!-- Phone -->
           <div class="phone">
             <p> <i class="fa-solid fa-headphones"></i> <span> &nbsp; +1 916-85-2235</span></p>
           </div>
         </div>
         <!-- Social Links -->
-        <div class="col-xl-2 col-md-6- col-lg-2 col-sm-12">
+        <div class="col-xl-2 col-md-6 col-lg-2 col-sm-12">
           <div class="social-links">
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -71,15 +68,14 @@
           </div>
         </div>
         <!-- Accounts -->
-        <div class="col-xl-4 col-md-6- col-lg-4 col-sm-12">
+        <div class="col-xl-5 col-md-6 col-lg-5 col-sm-12">
           <div class="accounts">
-            <ul class="">
-              <ul>
-                <li> <a href="#"> <i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
-                <li><a href="#"> <i class="fa-solid fa-chevron-right"></i> Sign in</a></li>
-                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> More Menu</a></li>
-              </ul>
-              <a href="#" class="join-now-btn"> Join Now</a>
+            <ul>
+              <li> <a href="#"> <i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+              <li><a href="#"> <i class="fa-solid fa-chevron-right"></i> Sign in</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> More Menu</a></li>
+            </ul>
+            <a href="#" class="join-now-btn"> Join Now</a>
           </div>
         </div>
       </div>
@@ -88,12 +84,12 @@
 
   <!-- Navigation Section -->
   <nav class="navigation-section position-sticky top-0 z-2" style="background-color: #fff;">
-    <div class="container-xl p-0 position-relative">
+    <div class="container-lg p-0 position-relative">
       <div class="row g-0 align-items-center position-relative">
         <!-- Logo -->
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
           <div class="logo">
-            <a href="#">
+            <a href="./index.html">
               <img src="images/logo.png" alt="logo">
               <span>THE<strong>GEM</strong></span>
             </a>
@@ -101,60 +97,43 @@
         </div>
 
         <!-- 
-          TODO -- Making Multiple Layer Navbar
+          TODO -- Working on search bar
          -->
         <!-- Navigation -->
         <div class="col-xl-9 col-lg-9 col-md-6 col-sm-6">
           <div class="nav-area">
             <ul class="nav-menu">
-              <li><a href="#">homepage</a>
-              <ul class="sub-menu">
-                <li><a href="#">sub menu 1</a></li>
-                <li><a href="#">sub menu 2<i class="fa-solid fa-caret-right nav-right-icon"></i></a>
-                  <ul class="sub-sub-menu">
-                    <li><a href="#">sub sub menu 1</a></li>
-                    <li><a href="#">sub sub menu 2</a></li>
-                    <li><a href="#">sub sub menu 3</a></li>
-                  </ul></li>
-                <li><a href="#">sub menu 3</a></li>
-              </ul>
-              </li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#project">projects</a></li>
-              <li><a href="#services">services</a>
+              <li><a href="./index.html">homepage</a></li>
+              <li><a>about</a>
                 <ul class="sub-menu">
-                  <li><a href="#">sub menu 1</a></li>
-                  <li><a href="#">sub menu 2</a></li>
-                  <li><a href="#">sub menu 3 <i class="fa-solid fa-caret-right nav-right-icon"></i></a>
+                  <li><a href="./pages/about.html">About Us</a></li>
+                  <li><a href="#skills">Our Skill</a></li>
+                  <li><a href="#mission">Our Mission</a></li>
+                  <li><a>Others<i class="fa-solid fa-caret-right nav-right-icon"></i></a>
                     <ul class="sub-sub-menu">
-                      <li><a href="#">sub sub menu 1</a></li>
-                      <li><a href="#">sub sub menu 2</a></li>
-                      <li><a href="#">sub sub menu 3</a></li>
-                    </ul></li>
+                      <li><a href="#ourteam">Our Team</a></li>
+                      <li><a href="#vacancie">vacancies</a></li>
+                      <li><a href="#partner">partners</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
-              <li><a href="#newssection">news</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li><a href="./pages/project.html">projects</a></li>
+              <li><a href="./pages/services.html">services</a>
+              </li>
+              <li><a href="./pages/news.html">news</a></li>
+              <li><a href="./pages/contact.html">contact</a></li>
             </ul>
             <div class="mobile-menu"></div>
 
-            
+            <!-- 
+              ! Search Bar
+             -->
             <div class="search-icon">
-              <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#exampleModal" style=" color: #edc403"></i>
+              <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              <!-- <input type="search" name="" id=""> -->
             </div>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content z-5">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <input type="search" name="" class="form-control">
-                    </div>
-                  </div>
-                </div>
-              </div>
+
 
 
             <!-- <div class="search-area">
@@ -185,7 +164,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about-section">
+  <section class="about-section">
     <div class="container-fluid p-0">
       <div class="about-section-wrap">
         <div class="row g-0">
@@ -224,7 +203,7 @@
   </section>
 
   <!-- Experience Section -->
-  <section class="experience-section">
+  <section id="about" class="experience-section">
     <div class="container">
       <!-- Experience Heading -->
       <div class="row gy-5">
@@ -251,21 +230,21 @@
 
       <!-- Experience Cards -->
       <div class="experience-card-wrap">
-        <div class="row g-3">
+        <div class="row gx-md-5 gx-sm-0">
           <!-- Card -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
             <div class="experience-card">
-              <img class="img-fluid mb-5 py-4" src="images/ex-icon-1.png" alt="experience-icon-1">
+              <img class="img-fluid mb-4 py-4" src="images/ex-icon-1.png" alt="experience-icon-1">
               <div class="experience-card-content">
                 <h5>design package</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum? lorem200</p>
               </div>
             </div>
           </div>
           <!-- Card -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
             <div class="experience-card">
-              <img class="img-fluid mb-5 py-4" src="images/ex-icon-2.png" alt="experience-icon-2">
+              <img class="img-fluid mb-4 py-4" src="images/ex-icon-2.png" alt="experience-icon-2">
               <div class="experience-card-content">
                 <h5>sustainable building</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum?</p>
@@ -273,9 +252,9 @@
             </div>
           </div>
           <!-- Card -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
             <div class="experience-card">
-              <img class="img-fluid mb-5 py-4" src="images/ex-icon-3.png" alt="experience-icon-3">
+              <img class="img-fluid mb-4 py-4" src="images/ex-icon-3.png" alt="experience-icon-3">
               <div class="experience-card-content">
                 <h5>concrete transport</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum?</p>
@@ -283,9 +262,9 @@
             </div>
           </div>
           <!-- Card -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
             <div class="experience-card">
-              <img class="img-fluid mb-5 py-4" src="images/ex-icon-4.png" alt="experience-icon-4">
+              <img class="img-fluid mb-4 py-4" src="images/ex-icon-4.png" alt="experience-icon-4">
               <div class="experience-card-content">
                 <h5>project management</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum?</p>
@@ -293,9 +272,9 @@
             </div>
           </div>
           <!-- Card -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
             <div class="experience-card">
-              <img class="img-fluid mb-5 py-4" src="images/ex-icon-5.png" alt="experience-icon-5">
+              <img class="img-fluid mb-4 py-4" src="images/ex-icon-5.png" alt="experience-icon-5">
               <div class="experience-card-content">
                 <h5>building renovation</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum?</p>
@@ -303,9 +282,9 @@
             </div>
           </div>
           <!-- Card -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
             <div class="experience-card">
-              <img class="img-fluid mb-5 py-4" src="images/ex-icon-6.png" alt="experience-icon-6">
+              <img class="img-fluid mb-4 py-4" src="images/ex-icon-6.png" alt="experience-icon-6">
               <div class="experience-card-content">
                 <h5>interior design</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum?</p>
@@ -318,7 +297,7 @@
   </section>
 
   <!-- Construction Project Section -->
-  <section class="contruction-project-section" style="background-color: #1d232d;">
+  <section id="freeQuote" class="contruction-project-section" style="background-color: #1d232d;">
     <div class="container">
       <div class="construction-project-content">
         <h3 class="small-title">Do You Have A</h3>
@@ -330,7 +309,7 @@
   </section>
 
   <!-- Our Skill Section -->
-  <section class="our-skill-section"
+  <section id="skills" class="our-skill-section"
     style="background-image: url(images/skill-bg-image.png); background-repeat: no-repeat; background-size: 52.3% 100%;">
     <div class="container">
       <div class="row gy-5">
@@ -396,7 +375,7 @@
   </section>
 
   <!-- Our Mission Section -->
-  <section class="our-mission-section">
+  <section id="mission" class="our-mission-section">
     <div class="container">
       <div class="row gy-5">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -408,9 +387,9 @@
               culpa, cum deleniti quod, maiores minus quis dolorem doloribus quas hic dicta dolores.</p>
 
             <ul class="mission-list">
-              <li><span>1</span> Lorem ipsum dolor sit amet.</li>
-              <li><span>2</span> Lorem ipsum dolor sit amet.</li>
-              <li><span>3</span> Lorem ipsum dolor sit amet.</li>
+              <li><span>1</span> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</li>
+              <li><span>2</span> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</li>
+              <li><span>3</span> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</li>
             </ul>
           </div>
         </div>
@@ -428,29 +407,41 @@
     <div class="project-gallery">
       <a href="#">
         <!-- <img class="one" src="https://dummyimage.com/200x500/5e5d60/fff&text=Img-1" alt=""> -->
-        <img class="one" src="https://plus.unsplash.com/premium_photo-1684341008678-22ada982c6ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="one"
+          src="https://plus.unsplash.com/premium_photo-1684341008678-22ada982c6ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="">
       </a>
       <a href="#">
         <!-- <img class="two" src="https://dummyimage.com/200x250/49494a/fff&text=Img-2" alt=""> -->
-        <img class="two" src="https://plus.unsplash.com/premium_photo-1683147638125-fd31a506a429?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="two"
+          src="https://plus.unsplash.com/premium_photo-1683147638125-fd31a506a429?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="">
       </a>
       <a href="#">
         <!-- <img class="three" src="https://dummyimage.com/200x250/5e5d60/fff&text=Img-3" alt=""> -->
-        <img class="three" src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="three"
+          src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="">
       </a>
       <a href="#">
         <!-- <img class="four" src="https://dummyimage.com/200x250/999f98/fff&text=Img-4" alt=""> -->
-        <img class="four" src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="four"
+          src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="">
       </a>
       <a href="#">
         <!-- <img class="five" src="https://dummyimage.com/200x250/49494a/fff&text=Img-5" alt=""> -->
-        <img class="five" src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="five"
+          src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="">
       </a>
       <a href="#">
         <!-- <img class="six" src="https://dummyimage.com/400x500/999f98/fff&text=Img-6" alt=""> -->
-        <img class="six" src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="six"
+          src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="">
       </a>
-      
+
 
 
     </div>
@@ -499,7 +490,7 @@
   </section>
 
   <!-- Our Team Section -->
-  <section class="team-section">
+  <section id="ourteam" class="team-section">
     <div class="container">
       <div class="team-heading">
         <h4 class="mid-title">Meet Out Team</h4>
@@ -610,7 +601,7 @@
       This Section is Done
     -->
   <!-- Open Vacancy Section -->
-  <section class="open-vacancy-section">
+  <section id="vacancie" class="open-vacancy-section">
     <div class="container">
       <div class="row">
         <div class="vacancy-heading">
@@ -681,11 +672,11 @@
     </div>
   </section>
 
-    <!-- 
+  <!-- 
       This section is Done
     -->
   <!-- Partner Section -->
-  <section class="partner-section"
+  <section id="partner" class="partner-section"
     style="background-image: url(images/partner-bg-image.png); background-position: center; background-size: cover;">
     <div class="container">
       <div id="partners" class="owl-carousel owl-theme">
@@ -699,7 +690,7 @@
   </section>
 
   <!-- 
-      
+      ! Problem in positon 
     -->
   <!-- Resent News Section -->
   <section id="newssection" class="recent-news-section">
@@ -730,7 +721,7 @@
                     <img class="h-100" src="https://dummyimage.com/300x300/000/fff" alt="">
                   </div>
                 </div>
-                
+
                 <!-- News-items -->
                 <div class="row g-0">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-12 bg-primary">

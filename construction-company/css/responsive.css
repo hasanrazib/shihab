@@ -85,6 +85,11 @@
         justify-content: center;
     }
 
+    .accounts {
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .large-title {
         font-size: 28px;
     }
@@ -192,6 +197,7 @@
     .recent-news-bottom-wrap {
         min-height: 700px;
     }
+    
 
 
 }

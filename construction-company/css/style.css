@@ -50,7 +50,7 @@ html {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
 }
 
 .social-links a i {
@@ -66,7 +66,7 @@ html {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 10px;
 }
 
@@ -120,7 +120,7 @@ html {
 
 .logo a {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -130,16 +130,16 @@ html {
 
 .nav-area {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .nav-menu li a {
@@ -147,8 +147,16 @@ html {
     font-weight: 600;
 }
 
+.sub-menu li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
 .nav-menu > li > a {
-    padding: 40px 0px;
+    padding: 43px 0px;
 }
 
 .nav-menu li {
@@ -166,9 +174,9 @@ html {
     animation: fadeIn .5s linear;
 }
 
-.sub-menu li {
+/* .sub-menu li {
     padding: 10px;
-}
+} */
 
 .sub-menu li:hover {
     background-color: #52555b;
@@ -178,7 +186,7 @@ html {
     display: block;
     position: absolute;
     background-color: #fff;
-    width: 250px;
+    width: 180px;
     left: -10px;
     top: 259.5%;
     border: 1px solid #ebebeb;
@@ -188,7 +196,7 @@ html {
     display: block;
     position: absolute;
     background-color: #fff;
-    width: 250px;
+    width: 180px;
     left: 100%;
     top: -1px;
     border: 1px solid #ebebeb;
@@ -203,8 +211,19 @@ html {
     flex-direction: column;
 }
 
-.search-icon {
+.search-icon i {
+    color: #edc403;
+}
+.search-icon:hover i {
+    color: #000;
+}
 
+.nav-area .modal-body {
+    padding: 35px 15px;
+}
+
+.modal-dialog {
+    top: 30%;
 }
 
 .modal-backdrop {
@@ -247,7 +266,7 @@ html {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
 	.nav-menu {
 		display:none;
 	}
@@ -273,6 +292,19 @@ html {
     .sub-menu li {
         padding: 0px;
     }
+
+    .logo a {
+        justify-content: center;
+    }
+    
+    .nav-area {
+        justify-content: center;
+    }
+
+    .sub-menu li a {
+        font-weight: 500;
+        padding: 0;
+    }
 }
 
 /* ----------------- Navigation Section ----------------- */
@@ -283,7 +315,11 @@ html {
     text-align: center;
     color: #fff;
     /* text-transform: uppercase; */
-    padding: 150px 0px;
+    /* padding: 155px 0px; */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .small-title {
@@ -321,6 +357,7 @@ html {
     font-family: var(--font-family-primary);
     font-size: 24px;
     position: relative;
+    font-weight: 600;
 }
 
 .about-section-content-white h6::after,
@@ -432,8 +469,7 @@ html {
 
 .experience-card {
     text-align: center;
-    padding: 50px;
-    /* border: 1px solid #0000005d; */
+    padding: 40px;
     transition: all .2s ease-in-out;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -484,7 +520,7 @@ html {
 /* ----------------- Skill and Mission Section ----------------- */
 .our-skill-section,
 .our-mission-section {
-    padding: 170px 0px;
+    padding: 200px 0px;
 }
 
 .our-mission-section {
@@ -517,6 +553,8 @@ html {
     text-align: justify;
     font-family: var(--font-family-primary);
     font-size: 17px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
 
 .mission-content p {
@@ -543,7 +581,7 @@ html {
     align-items: center;
     gap: 10px;
     font-family: var(--font-family-secondary);
-    font-size: 22px;
+    font-size: 20px;
     border: 1px solid #0000003e;
     padding: 25px;
 }
@@ -617,8 +655,7 @@ html {
 
 .owl-carousel .owl-item .team-member img{
     border-radius: 50%;
-    max-width: 200px;
-    width: 70%;
+    max-width: 150px;
     margin: 0 auto;
 }
 
@@ -684,7 +721,7 @@ padding: 50px 0px;
 
 .plan-card {
     border: 1px solid #00000042;
-    max-width: 350px;
+    /* max-width: 350px; */
     margin: 0 auto;
 }
 
@@ -962,7 +999,7 @@ span.tag-items {
 
 /* ----------------- Footer Section ----------------- */
 .contact-section {
-    padding: 100px 0px;
+    padding: 180px 0px;
 }
 
 .contact-form {
@@ -976,7 +1013,7 @@ span.tag-items {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    padding: 10px;
+    padding: 10px 35px 10px 10px;
     border: 1px solid #dfe5e8;
     border-radius: 5px;
     font-family: var(--font-family-secondary);
@@ -1398,3 +1435,57 @@ span.tag-items {
 .search-icon:hover{
     cursor: pointer;
 }
+
+
+/* About Page */
+.page-banner {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    background-color: #00000069;
+    background-blend-mode: darken;
+}
+
+.page-banner-heading {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.page-banner-path ul li a {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.page-banner-path ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    padding: 6px;
+}
+
+.page-banner-path ul li:nth-child(even) {
+    font-size: 13px;
+}
+
+.page-banner-path ul li:last-child  a{
+    color: #edc403;
+}
+
+.page-banner-path ul li:last-child{
+    position: relative;
+}
+.page-banner-path ul li:last-child::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #edc403;
+    top: 130%;
+    left: 0;
+}
+/* About Page */
