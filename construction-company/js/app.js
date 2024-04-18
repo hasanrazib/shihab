@@ -66,3 +66,28 @@ $('#partners').owlCarousel({
     }
 })
 
+const searchIcon = document.getElementById('search-btn');
+const searchBar = document.getElementById('search-bar')
+
+let isSearchBarVisible = false;
+
+searchIcon.addEventListener('click', function() {
+  if (isSearchBarVisible) {
+    searchBar.style.display = 'none';
+    isSearchBarVisible = false;
+  } else {
+    searchBar.style.display = 'block';
+    isSearchBarVisible = true;
+  }
+});
+
+document.addEventListener('click', function(event) {
+  if (
+    event.target !== searchIcon &&
+    event.target !== searchBar &&
+    isSearchBarVisible
+  ) {
+    searchBar.style.display = 'none';
+    isSearchBarVisible = false;
+  }
+});

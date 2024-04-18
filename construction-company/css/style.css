@@ -214,6 +214,25 @@ html {
 .search-icon i {
     color: #edc403;
 }
+
+.search-icon {
+    position: relative;
+}
+
+#search-bar {
+    position: absolute;
+    left: -200px;
+    top: 262%;
+    outline: none;
+    width: 260px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 3px solid #ffd52d;
+    color: white;
+    background: black;
+    display: none;
+}
+
 .search-icon:hover i {
     color: #000;
 }
@@ -348,7 +367,7 @@ html {
 /* ----------------- About Section Section ----------------- */
 .about-section-content-white,
 .about-section-content-yellow {
-    padding: 130px 75px 70px 60px;
+    padding: 150px 75px 70px 60px;
 }
 
 .about-section-content-white h6,
@@ -404,7 +423,7 @@ html {
 
 /* ----------------- Experience Section ----------------- */
 .experience-section {
-    padding: 80px 0px;
+    padding: 100px 0px;
 }
 
 .heading-right-content,
@@ -451,9 +470,9 @@ html {
     padding: 6px 24px;
     display: inline-block;
     background: #edc403;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: 15px;
     cursor: pointer;
 }
@@ -485,10 +504,12 @@ html {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 .experience-card-content p {
     font-family: var(--font-family-martel-sans);
     font-size: 15px;
+    color: gray;
 }
 /* ----------------- Experience Section ----------------- */
 
@@ -605,6 +626,7 @@ html {
 .team-heading h4 {
     text-align: center;
     margin-bottom: 80px;
+    font-family: var(--font-family-primary);
 }
 
 .team-heading h4{
@@ -1279,9 +1301,7 @@ span.tag-items {
 /* ----------------- Our Project Section Section ----------------- */
 
 /* ----------------- Recent News Section Section ----------------- */
-.recent-news-section {
-    /* background-color: red; */
-}
+
 
 .recent-news-wrap {
     position: relative;
@@ -1489,3 +1509,116 @@ span.tag-items {
     left: 0;
 }
 /* About Page */
+
+/* Service Page */
+.service-card-content h5 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    padding: 15px 0px;
+}
+
+.service-card-content p {
+    margin: 0;
+    font-family: var(--font-family-secondary);
+    text-align: justify;
+    color: gray;
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+/* Service Page */
+
+/* Contact Page */
+.section-padding {
+    padding: 100px 0px;
+}
+
+.contact-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 50px 0px;
+}
+
+.contact-social i {
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.contact-sub-title {
+    font-family: var(--font-family-secondary);
+    max-width: 60%;
+    margin: auto;
+    letter-spacing: 1px;
+    color: gray;
+    font-size: 17px;
+}
+
+.contact-inpu {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+/* Contact Page */
+
+/* Project Page */
+.project-cart {
+    position: relative;
+    border: 16px solid #e8e8e8;
+    padding: 10px;
+}
+
+.project-cart h5 {
+    text-transform: uppercase;
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.project-cart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 205, 70);
+    opacity: 0;
+}
+
+.project-cart:hover::after{
+    opacity: .2;
+    transition: opacity .2s linear;
+}
+
+.project-cart a {
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.project-cart:hover a {
+    opacity: 1;
+    z-index: 1;
+}
+
+.project-cart a {
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-cart a:hover i {
+    color: #25425f;
+}
+/* Project Page */
