@@ -1591,18 +1591,19 @@ span.tag-items {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(236, 205, 70);
+    background-color: rgb(219, 215, 111);
     opacity: 0;
 }
 
 .project-cart:hover::after{
-    opacity: .2;
+    opacity: .6;
     transition: opacity .2s linear;
 }
 
 .project-cart a {
     opacity: 0;
     transition: opacity .2s linear;
+    font-weight: 500;
 }
 
 .project-cart:hover a {
@@ -1611,14 +1612,14 @@ span.tag-items {
 }
 
 .project-cart a {
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.project-cart a:hover i {
+.project-cart a:hover {
     color: #fff;
 }
 /* Project Page */
