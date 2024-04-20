@@ -1392,7 +1392,7 @@ span.tag-items {
 }
 
 .news-author-name {
-    font-size: 12px;
+    font-size: 14px;
     display: inline-block;
     padding: 20px 0px;
     color: #8a8a8a;
@@ -1619,6 +1619,38 @@ span.tag-items {
 }
 
 .project-cart a:hover i {
-    color: #25425f;
+    color: #fff;
 }
 /* Project Page */
+
+/* News Page */
+.reactions {
+    font-size: 14px;
+}
+
+.share {
+    
+}
+
+.share i {
+    padding: 10px;
+    background-color: #b6c6c9;
+    color: white;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+.share i:hover {
+    background-color: #000;
+}
+
+.share a {
+    border: 2px solid #edc403;
+    padding: 6px 20px;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+}
+
+.share a:hover {
+    background-color: #edc403;
+}
+/* News Page */
