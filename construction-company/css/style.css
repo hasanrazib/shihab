@@ -136,7 +136,8 @@ html {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
+    padding-right: 15px;
 }
 
 .nav-menu {
@@ -227,7 +228,7 @@ html {
 #search-bar {
     position: absolute;
     left: -200px;
-    top: 262%;
+    top: 305%;
     outline: none;
     width: 260px;
     padding: 10px 15px;
@@ -267,7 +268,7 @@ html {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 133%;
+    top: 149%;
     background-color: #edc403;
     text-transform: uppercase;
     padding-left: 40px;
@@ -290,7 +291,7 @@ html {
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 	.nav-menu {
 		display:none;
 	}
@@ -317,13 +318,13 @@ html {
         padding: 0px;
     }
 
-    .logo {
+    /* .logo {
         justify-content: center;
-    }
+    } */
     
-    .nav-area {
+    /* .nav-area {
         justify-content: center;
-    }
+    } */
 
     .sub-menu li a {
         font-weight: 500;
@@ -1589,8 +1590,8 @@ span.tag-items {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 
