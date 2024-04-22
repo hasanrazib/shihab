@@ -1,23 +1,14 @@
 
-@media only screen and (min-width: 1367px) and (max-width: 1500px) {
-
-    .recent-news-bottom {
-        /* width: 100%; */
-    }
-
-    .recent-news-bottom-wrap {
-        min-height: 750px;
-    }
-
-
-}
-
 /************IPad**************/
 @media only screen and (min-width: 992px) and (max-width: 1366px) {
 
     .recent-news-bottom {
         /* width: 100%; */
     }
+
+    /* body {
+        background: green;
+    } */
 
 
 }
@@ -26,6 +17,9 @@
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+    /* body {
+        background: blue;
+    } */
     .address, .phone {
         text-align: center;
     }
@@ -76,7 +70,11 @@
 }
 /* Mobile Layout: 320px. */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+
+    /* body {
+        background: yellow;
+    } */
 
     .address, .phone {
         text-align: center;

@@ -234,7 +234,7 @@ html {
     border-radius: 5px;
     border: 3px solid #ffd52d;
     color: white;
-    background: black;
+    background: #383838;
     display: none;
 }
 
@@ -1285,7 +1285,7 @@ span.tag-items {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #ffffffb1;
+    background-color: #edc203b7;
     display: none;
 }
 
@@ -1302,6 +1302,10 @@ span.tag-items {
     opacity: 0;
     transition: opacity .2s linear;
     z-index: 1;
+}
+
+.project-gallery a i:hover {
+    color: #fff;
 }
 
 .project-gallery a:hover i {
@@ -1615,56 +1619,24 @@ span.tag-items {
 /* Project Page */
 .project-cart {
     position: relative;
-    border: 5px solid #e8e8e8;
     border-radius: 5px;
     padding: 10px;
 }
 
-.project-cart h5 {
+.project-cart p{
+    color: gray;
+    padding-bottom: 24px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.project-cart h4 {
     text-transform: uppercase;
     font-family: var(--font-family-primary);
     font-weight: 600;
     padding: 10px 0px;
 }
 
-.project-cart::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #edc403;
-    opacity: 0;
-}
-
-.project-cart:hover::after{
-    opacity: .8;
-    transition: opacity .2s linear;
-}
-
-.project-cart a {
-    opacity: 0;
-    transition: opacity .2s linear;
-    font-weight: 500;
-}
-
-.project-cart:hover a {
-    opacity: 1;
-    z-index: 1;
-}
-
-.project-cart a {
-    font-size: 30px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.project-cart a:hover {
-    color: #fff;
-}
 /* Project Page */
 
 /* News Page */
