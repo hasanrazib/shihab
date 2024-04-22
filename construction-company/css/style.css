@@ -143,7 +143,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
 }
 
 .nav-menu li a {
@@ -160,7 +160,7 @@ html {
 }
 
 .nav-menu > li > a {
-    padding: 43px 0px;
+    padding: 52px 0px;
 }
 
 .nav-menu li {
@@ -192,7 +192,7 @@ html {
     background-color: #fff;
     width: 180px;
     left: -10px;
-    top: 259.5%;
+    top: 304.5%;
     border: 1px solid #ebebeb;
 }
 
@@ -1721,5 +1721,49 @@ span.tag-items {
     font-size: 17px;
 }
 
-
 /* Sample Page Style */
+
+/* Media Page */
+
+.img-gallery,
+.video-gallery {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: yellow;
+    overflow: hidden;
+}
+
+
+.img-gallery:hover img,
+.video-gallery:hover img {
+    opacity: .5;
+    transform: scale(1.1);
+}
+
+.img-gallery:hover i,
+.video-gallery:hover i{
+    opacity: 1;
+}
+
+.img-gallery img,
+.video-gallery img {
+    width: 100%;
+    height: 100%;
+    transition: all .2s linear;
+}
+
+.img-gallery i,
+.video-gallery i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #000;
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+/* Media Page */

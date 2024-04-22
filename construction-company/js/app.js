@@ -91,3 +91,11 @@ document.addEventListener('click', function(event) {
     isSearchBarVisible = false;
   }
 });
+
+
+$('.youtube').colorbox({iframe: true, width: 640, height: 390, href:function(){
+    var videoId = new RegExp('[\\?&]v=([^&#]*)').exec(this.href);
+    if (videoId && videoId[1]) {
+      return 'http://youtube.com/embed/'+videoId[1]+'?rel=0&wmode=transparent';
+    }
+  }});
