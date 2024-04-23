@@ -2,10 +2,6 @@
 /************IPad**************/
 @media only screen and (min-width: 992px) and (max-width: 1366px) {
 
-    .recent-news-bottom {
-        /* width: 100%; */
-    }
-
     /* body {
         background: green;
     } */
@@ -66,9 +62,6 @@
 
     .small-title {
         font-size: 26px;
-    }
-    .recent-news-bottom {
-        /* width: 100%; */
     }
 
     .project-gallery {
@@ -234,10 +227,7 @@
         height: 40px;
         font-size: 16px;
     }
-
-    .recent-news-bottom {
-        /* width: 100%; */
-    }
+    
     .recent-news-bottom-wrap {
         min-height: 1000px;
     }
