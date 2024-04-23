@@ -6,8 +6,13 @@
         /* width: 100%; */
     }
 
-    body {
+    /* body {
         background: green;
+    } */
+
+    .process-heading h5 {
+        padding: 55px 0px;
+        text-align: center;
     }
 
 
@@ -17,8 +22,17 @@
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    body {
+    /* body {
         background: blue;
+    } */
+
+    .about-bottom-img {
+        display: none;
+    }
+
+    .process-heading h5 {
+        padding: 55px 0px;
+        text-align: center;
     }
 
         .logo {
@@ -88,9 +102,9 @@
 
 @media only screen and (max-width: 768px) {
 
-    body {
+    /* body {
         background: yellow;
-    }
+    } */
     /* .logo {
         justify-content: center;
     }
@@ -98,6 +112,39 @@
     .nav-area {
         justify-content: center;
     } */
+
+    .contact-social {
+        gap: 12px;
+    }
+
+    .contact-social i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-bottom-img {
+        display: none;
+    }
+
+    .contact-sub-title {
+        max-width: none;
+        margin: unset;
+        text-align: justify;
+    }
+
+    .our-skill-section, 
+    .our-mission-section,
+    .contact-section {
+        padding: 150px 0px;
+    }
+    
+    .contact-section {
+        background-image: none;
+    }
+
+    .our-skill-section {
+        background-color: #efefef;
+    }
 
     .page-banner {
         height: 250px;
@@ -135,6 +182,7 @@
 
     .heading-left-content h4 {
         font-size: 30px;
+        text-align: center;
     }
 
     .project-btn a {
@@ -226,7 +274,19 @@
     .recent-news-bottom-wrap {
         min-height: 700px;
     }
+    /* body {
+        background-color: red;
+    } */
+
+    .hero-section-content {
+        height: 450px;
+    }
+
+    .contact-section {
+        background-image: none;
+    }
     
-
-
+    .our-skill-section {
+        background: #efefef;
+    }
 }

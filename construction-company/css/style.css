@@ -227,7 +227,7 @@ html {
 
 #search-bar {
     position: absolute;
-    left: -200px;
+    left: -235px;
     top: 305%;
     outline: none;
     width: 260px;
@@ -462,7 +462,8 @@ html {
 
 .heading-left-content p {
     font-size: 18px;
-    line-height: 35px;
+    line-height: 30px;
+    padding-bottom: 20px;
     font-family: var(--font-family-primary);
 }
 
@@ -556,6 +557,12 @@ html {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+.our-skill-section {
+    background-image: url(../images/skill-bg-image.png); background-repeat: no-repeat; background-size: 52.3% 100%;
+}
+
+
 
 .skill-content  {
     max-width: 95%;
@@ -1029,6 +1036,7 @@ span.tag-items {
 /* ----------------- Footer Section ----------------- */
 .contact-section {
     padding: 180px 0px;
+    background-image: url(../images/contact-bg-image-1.png); background-repeat: no-repeat; background-size: cover;
 }
 
 .contact-form {
@@ -1116,6 +1124,7 @@ span.tag-items {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
+    line-height: 20px;
 }
 
 .contact-content span {
