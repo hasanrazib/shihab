@@ -1776,4 +1776,9 @@ span.tag-items {
     transition: all .2s linear;
 }
 
+.img-gallery :hover,
+.video-gallery i:hover {
+    color: #fff;
+}
+
 /* Media Page */

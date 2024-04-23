@@ -163,7 +163,10 @@
 
     .accounts {
         justify-content: center;
-        flex-direction: column;
+    }
+
+    .accounts ul {
+        display: none;
     }
 
     .large-title {
