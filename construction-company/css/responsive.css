@@ -2,15 +2,18 @@
 /************IPad**************/
 @media only screen and (min-width: 992px) and (max-width: 1366px) {
 
-    /* body {
+    body {
         background: green;
-    } */
+    }
 
     .process-heading h5 {
         padding: 55px 0px;
         text-align: center;
     }
 
+    #search-bar {
+        top: 264%;
+    }
 
 }
 
@@ -18,9 +21,21 @@
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    /* body {
+    body {
         background: blue;
-    } */
+    }
+    
+    .navigation-section {
+        padding: 10px 0px;
+    }
+
+    .slicknav_nav {
+        top: 117%;
+    }
+
+    #search-bar {
+        top: 222%;
+    }
 
     .about-bottom-img {
         display: none;
@@ -95,9 +110,9 @@
 
 @media only screen and (max-width: 768px) {
 
-    /* body {
+    body {
         background: yellow;
-    } */
+    }
     /* .logo {
         justify-content: center;
     }
@@ -105,7 +120,28 @@
     .nav-area {
         justify-content: center;
     } */
+    
+    .slicknav_nav {
+        top: 100%;
+    }
+    .navigation-section {
+        padding: 0;
+    }
 
+    #search-bar {
+        top: 176%;
+    }
+
+    .top-social-section {
+        padding: 5px 0px;
+    }
+
+    .about-section-content-white, .about-section-content-yellow {
+        padding: 40px 20px;
+    }
+    .hero-section-content {
+        height: 450px;
+    }
     .contact-social {
         gap: 12px;
     }
@@ -128,7 +164,7 @@
     .our-skill-section, 
     .our-mission-section,
     .contact-section {
-        padding: 150px 0px;
+        padding: 100px 0px;
     }
     
     .contact-section {
@@ -266,9 +302,9 @@
     .recent-news-bottom-wrap {
         min-height: 700px;
     }
-    /* body {
+    body {
         background-color: red;
-    } */
+    }
 
     .hero-section-content {
         height: 450px;
@@ -280,5 +316,9 @@
     
     .our-skill-section {
         background: #efefef;
+    }
+
+    .slicknav_nav {
+        top: 100%;
     }
 }

@@ -98,7 +98,7 @@ html {
 }
 
 .accounts .join-now-btn {
-    padding: 5px 10px;
+    padding: 2px 10px;
     background-color: #edc403;
     color: #000;
     border-radius: 3px;
@@ -117,7 +117,7 @@ html {
 /* ----------------- Navigation Section ----------------- */
 
 .navigation-section {
-    padding: 30px 0px;
+    padding: 20px 0px;
     font-family: var(--font-family-primary);
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
@@ -228,7 +228,7 @@ html {
 #search-bar {
     position: absolute;
     left: -235px;
-    top: 305%;
+    top: 265%;
     outline: none;
     width: 260px;
     padding: 10px 15px;
