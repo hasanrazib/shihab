@@ -1,3 +1,15 @@
+/*  ==========================================================================
+    Helper classes
+    ==========================================================================  */
+
+.sr-position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+}
+
 :root {
     --font-family-primary: "Montserrat", sans-serif;
     --font-family-secondary: "Source Sans 3", sans-serif;
@@ -193,7 +205,7 @@ html {
     background-color: #fff;
     width: 180px;
     left: -10px;
-    top: 304.5%;
+    top:263.5%;
     border: 1px solid #ebebeb;
 }
 
@@ -291,46 +303,7 @@ html {
 
 
 
-@media screen and (max-width: 992px) {
-	.nav-menu {
-		display:none;
-	}
-	
-	 .mobile-menu {
-		display:block;
-	}
 
-    .nav-right-icon {
-        display: none;
-    }
-
-    .nav-menu > li:hover > a,
-    .sub-menu > li:hover > a,
-    .sub-sub-menu > li:hover > a {
-        color: unset;
-    }
-
-    .sub-menu li:hover {
-        background-color: unset;
-    }
-
-    .sub-menu li {
-        padding: 0px;
-    }
-
-    /* .logo {
-        justify-content: center;
-    } */
-    
-    /* .nav-area {
-        justify-content: center;
-    } */
-
-    .sub-menu li a {
-        font-weight: 500;
-        padding: 0;
-    }
-}
 
 /* ----------------- Navigation Section ----------------- */
 
@@ -1519,11 +1492,8 @@ span.tag-items {
 }
 
 .page-banner-heading {
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #fff;
+    width: 100%;
 }
 
 .page-banner-path ul li a {
@@ -1556,7 +1526,7 @@ span.tag-items {
     width: 100%;
     height: 3px;
     background-color: #edc403;
-    top: 130%;
+    top: 112%;
     left: 0;
 }
 /* About Page */

@@ -1,3 +1,48 @@
+/*  ==========================================================================
+    Slick Nav CSS
+    ==========================================================================  */
+
+@media screen and (max-width: 992px) {
+	.nav-menu {
+		display:none;
+	}
+	
+	 .mobile-menu {
+		display:block;
+	}
+
+    .nav-right-icon {
+        display: none;
+    }
+
+    .nav-menu > li:hover > a,
+    .sub-menu > li:hover > a,
+    .sub-sub-menu > li:hover > a {
+        color: unset;
+    }
+
+    .sub-menu li:hover {
+        background-color: unset;
+    }
+
+    .sub-menu li {
+        padding: 0px;
+    }
+
+    /* .logo {
+        justify-content: center;
+    } */
+    
+    /* .nav-area {
+        justify-content: center;
+    } */
+
+    .sub-menu li a {
+        font-weight: 500;
+        padding: 0;
+    }
+}
+
 
 /************IPad**************/
 @media only screen and (min-width: 992px) and (max-width: 1366px) {
@@ -30,7 +75,7 @@
     }
 
     .slicknav_nav {
-        top: 117%;
+        top: 116%;
     }
 
     #search-bar {
@@ -56,10 +101,6 @@
 
     .page-banner {
         height: 300px;
-    }
-
-    .page-banner-heading {
-        height: 86.5%;
     }
     .address, .phone {
         text-align: center;
@@ -121,6 +162,20 @@
         justify-content: center;
     } */
     
+    .recent-news-heading,
+    .plan-section-top {
+        padding: 100px 0px;
+    }
+    .plan-section-heading h5,
+    .project-heading h4 {
+        font-size: 29px;
+    }
+
+    .partner-section,
+    .experience-section {
+        padding: 80px 0px;
+    }
+    
     .slicknav_nav {
         top: 100%;
     }
@@ -164,7 +219,7 @@
     .our-skill-section, 
     .our-mission-section,
     .contact-section {
-        padding: 100px 0px;
+        padding: 80px 0px;
     }
     
     .contact-section {
@@ -177,10 +232,6 @@
 
     .page-banner {
         height: 250px;
-    }
-
-    .page-banner-heading{
-        height: 84%;
     }
 
     .address, .phone {
