@@ -10,6 +10,10 @@
     padding: 5px;
 }
 
+.sr-color-yellow {
+    color: #edc403;
+}
+
 :root {
     --font-family-primary: "Montserrat", sans-serif;
     --font-family-secondary: "Source Sans 3", sans-serif;
@@ -50,16 +54,11 @@ html {
 
 /* ----------------- Top Social Section ----------------- */
 
-.top-social-section {
+.top-section {
     color: #c8c8c8;
     font-family: var(--font-family-secondary);
     font-size: 14px;
     padding: 10px 0px;
-}
-
-
-.address i, .phone i {
-    color: #edc403;
 }
 
 .social-links {
@@ -344,13 +343,11 @@ html {
 
 
 /* ----------------- About Section Section ----------------- */
-.about-section-content-white,
-.about-section-content-yellow {
+.quick-links-content {
     padding: 150px 75px 70px 60px;
 }
 
-.about-section-content-white h6,
-.about-section-content-yellow h6 {
+.quick-links-content h6 {
     text-transform: uppercase;
     font-family: var(--font-family-primary);
     font-size: 24px;
@@ -358,8 +355,7 @@ html {
     font-weight: 600;
 }
 
-.about-section-content-white h6::after,
-.about-section-content-yellow h6::after,
+.quick-links-content h6::after,
 .skill-content h3::after,  
 .mission-content h3::after  {
     content: '';
@@ -370,25 +366,27 @@ html {
     bottom: -18px;
 }
 
-.about-section-content-white h6::after,
 .skill-content h3::after,
 .mission-content h3::after {
     background-color: #edc403;
 }
 
-.about-section-content-yellow h6::after {
-    background-color: #000;
+.after-bg-yellow::after {
+background-color: #edc403;
 }
 
-.about-section-content-white p,
-.about-section-content-yellow p {
+.after-bg-black::after {
+background-color: #000;
+}
+
+.quick-links-content p {
     text-transform: uppercase;
     font-family: var(--font-family-secondary);
     font-size: 16px;
     padding-top: 25px;
 }
 
-.about-section-wrap {
+.quick-links-wrap {
     position: relative;
 }
 
@@ -401,12 +399,12 @@ html {
 
 
 /* ----------------- Experience Section ----------------- */
-.experience-section {
+.about-section {
     padding: 100px 0px;
 }
 
 .heading-right-content,
-.heading-left-content {
+.textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -414,15 +412,15 @@ html {
     gap: 40px;
 }
 
-.heading-left-content h4 {
-    font-size: 50px;
+.textarea h4 {
+    font-size: 35px;
     font-family: var(--font-family-primary);
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
 }
 
-.heading-left-content h4::after {
+.textarea h4::after {
     content: '';
     width: 50px;
     height: 2px;
@@ -433,7 +431,7 @@ html {
     background-color: #edc403;
 }
 
-.heading-left-content p {
+.textarea p {
     font-size: 18px;
     line-height: 30px;
     padding-bottom: 20px;
@@ -498,10 +496,10 @@ html {
 /* ----------------- Construction Project Section ----------------- */
 
 
-.construction-project-content {
+.call-to-action {
     text-align: center;
 }
-.construction-project-content h1 {
+.call-to-action h1 {
     color: #edc403;
     font-family: var(--font-family-primary);
 }
@@ -510,7 +508,7 @@ html {
     padding: 120px 0px;
 }
 
-.construction-project-content h3 {
+.call-to-action h3 {
     color: #fff;
     font-family: var(--font-family-martel-sans);
 }
@@ -1149,7 +1147,6 @@ span.tag-items {
 
 .process-content h4 {
     font-family: var(--font-family-primary);
-    color: #ffc601;
     padding-bottom: 20px;
     font-size: 50px;
     font-weight: 700;

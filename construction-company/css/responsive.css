@@ -47,9 +47,9 @@
 /************IPad**************/
 @media only screen and (min-width: 992px) and (max-width: 1366px) {
 
-    body {
+    /* body {
         background: green;
-    }
+    } */
 
     .process-heading h5 {
         padding: 55px 0px;
@@ -66,9 +66,9 @@
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    body {
+    /* body {
         background: blue;
-    }
+    } */
     
     .navigation-section {
         padding: 10px 0px;
@@ -102,9 +102,6 @@
     .page-banner {
         height: 300px;
     }
-    .address, .phone {
-        text-align: center;
-    }
     .social-links {
         justify-content: center;
     }
@@ -122,6 +119,7 @@
 
     .project-gallery {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 250px);
     }
 
     .project-gallery a:first-child {
@@ -151,9 +149,9 @@
 
 @media only screen and (max-width: 768px) {
 
-    body {
+    /* body {
         background: yellow;
-    }
+    } */
     /* .logo {
         justify-content: center;
     }
@@ -172,12 +170,13 @@
     }
 
     .partner-section,
-    .experience-section {
+    .about-section {
         padding: 80px 0px;
     }
     
     .slicknav_nav {
         top: 100%;
+        padding-left: 10px;
     }
     .navigation-section {
         padding: 0;
@@ -187,11 +186,11 @@
         top: 176%;
     }
 
-    .top-social-section {
+    .top-section {
         padding: 5px 0px;
     }
 
-    .about-section-content-white, .about-section-content-yellow {
+    .quick-links-content-white, .quick-links-content-yellow {
         padding: 40px 20px;
     }
     .hero-section-content {
@@ -232,10 +231,6 @@
 
     .page-banner {
         height: 250px;
-    }
-
-    .address, .phone {
-        text-align: center;
     }
     .social-links {
         justify-content: center;
@@ -320,6 +315,7 @@
 
     .project-gallery {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
     }
 
     .project-gallery a:first-child {
@@ -353,9 +349,9 @@
     .recent-news-bottom-wrap {
         min-height: 700px;
     }
-    body {
+    /* body {
         background-color: red;
-    }
+    } */
 
     .hero-section-content {
         height: 450px;
@@ -371,5 +367,6 @@
 
     .slicknav_nav {
         top: 100%;
+        padding-left: 10px;
     }
 }

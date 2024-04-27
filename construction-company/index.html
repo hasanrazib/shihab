@@ -42,7 +42,7 @@
     This Section is Done
   -->
   <!-- Top Social Section (This Section Break Text) -->
-  <!-- <section id="top" class="top-social-section" style="background-color: #29292b;">
+  <!-- <section id="top" class="top-section" style="background-color: #29292b;">
     <div class="container">
       <div class="row gy-2 align-items-center">
         <div class="col-xl-5 col-md-12 col-lg-5 col-sm-12 d-flex gap-5 justify-content-lg-start justify-content-center justify-content-md-center">
@@ -79,21 +79,34 @@
   </section> -->
 
       <!-- Top Social Section -->
-      <section id="top" class="top-social-section" style="background-color: #29292b;">
+      <!-- 
+        !change name -Done
+       -->
+      <section id="top" class="top-section" style="background-color: #29292b;">
         <div class="container">
             <div class="row gy-2 align-items-center">
                 <!-- Address -->
                 <div class="col-xl-5 col-md-12 col-lg-5 col-12 d-lg-flex gap-lg-5 d-lg-block d-none">
-                    <div class="address">
+                  <!-- 
+                    !make these a list -Done
+                   -->
+                   <ul class="d-flex gap-5">
+                    <li><i class="fa-solid fa-location-dot sr-color-yellow"></i> <span>19th Ave New York, NYv 95822, USA</span></li>
+                    <li><i class="fa-solid fa-headphones sr-color-yellow"></i> <span> &nbsp; +1 916-85-2235</span></li>
+                   </ul>
+                    <!-- <div class="address">
                         <p> <i class="fa-solid fa-location-dot"></i> <span>19th Ave New York, NYv 95822, USA</span> </p>
-                    </div>
+                    </div> -->
                     <!-- Phone -->
-                    <div class="phone">
+                    <!-- <div class="phone">
                         <p> <i class="fa-solid fa-headphones"></i> <span> &nbsp; +1 916-85-2235</span></p>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- Social Links -->
-                <div class="col-xl-2 col-md-6 col-lg-2 col-sm-6 col-12">
+                <!-- 
+                  ! col order  -Done
+                 -->
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -165,10 +178,6 @@
               <li><a href="./pages/contact.html">contact</a></li>
             </ul>
             <div class="mobile-menu"></div>
-
-            <!-- 
-              ! Search Bar
-             -->
             <div class="search-icon">
               <i id="search-btn" class="fa-solid fa-magnifying-glass" autocomplete="off"></i>
               <input type="search" id="search-bar" name="" id="">
@@ -200,15 +209,21 @@
   </section>
 
   <!-- About Section -->
-  <section class="about-section">
+  <!-- 
+    ! quick links -Done
+   -->
+  <section class="quick-links">
     <div class="container-fluid p-0">
-      <div class="about-section-wrap">
+      <div class="quick-links-wrap">
         <div class="row g-0">
 
           <!-- renovation buildings -->
+          <!-- 
+            ! Make only one class in H6 -Done
+           -->
           <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-            <div class="about-section-content-white" style="background-color: #f2f1f1">
-              <h6>renovation buildings</h6>
+            <div class="quick-links-content" style="background-color: #f2f1f1">
+              <h6 class="after-bg-yellow">renovation buildings</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facilis maiores suscipit. Fugit,
                 quaerat nostrum.</p>
             </div>
@@ -216,8 +231,8 @@
 
           <!-- design and building -->
           <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-            <div class="about-section-content-yellow" style="background-color: #edc403">
-              <h6>design and building</h6>
+            <div class="quick-links-content" style="background-color: #edc403">
+              <h6 class="after-bg-black">design and building</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facilis maiores suscipit. Fugit,
                 quaerat nostrum.</p>
             </div>
@@ -225,8 +240,8 @@
 
           <!-- painting and roofing -->
           <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-            <div class="about-section-content-white" style="background-color: #f2f1f1">
-              <h6>painting and roofing</h6>
+            <div class="quick-links-content" style="background-color: #f2f1f1">
+              <h6 class="after-bg-yellow">painting and roofing</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facilis maiores suscipit. Fugit,
                 quaerat nostrum.</p>
             </div>
@@ -239,13 +254,16 @@
   </section>
 
   <!-- Experience Section -->
-  <section id="about" class="experience-section">
+  <!-- 
+    ! Make this about section  -Done
+   -->
+  <section id="about" class="about-section">
     <div class="container">
       <!-- Experience Heading -->
       <div class="row gy-2">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div class="heading-left-content">
-            <h4>25+ YEARS OF experience</h4>
+          <div class="textarea">
+            <h4 class="title-large">25+ YEARS OF experience</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
@@ -335,11 +353,18 @@
   <!-- Construction Project Section -->
   <section id="freeQuote" class="contruction-project-section" style="background-color: #1d232d;">
     <div class="container">
-      <div class="construction-project-content">
-        <h3 class="small-title">Do You Have A</h3>
-        <h1 class="mid-title">Construction Project</h1>
-        <h3 class="small-title">We Can Help With?</h3>
-        <div class="yellow-btn mt-5">get a free quote</div>
+      <div class="row">
+        <div class="col-12">
+          <!-- 
+            ! Make a grid and class name cta(call to action) make a default btn --Done
+           -->
+          <div class="call-to-action">
+            <h3 class="small-title">Do You Have A</h3>
+            <h1 class="mid-title">Construction Project</h1>
+            <h3 class="small-title">We Can Help With?</h3>
+            <div class="yellow-btn mt-5">get a free quote</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -347,9 +372,10 @@
   <!-- Our Skill Section -->
   <section id="skills" class="our-skill-section">
     <div class="container">
-      <div class="row gy-5">
+      <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div class="skill-content">
+          <!-- !margin bottom -Done -->
+          <div class="skill-content mb-5">
             <h3 class="mid-title">
               Our Skills
             </h3>
@@ -439,6 +465,8 @@
       <h4>our projects</h4>
       <p>TAKE A LOOK AT SOME AMAZING PROJECTS WE HAVE FINISHED</p>
     </div>
+
+    <!-- Project Gallery -->
     <div class="project-gallery">
       <a href="#">
         <!-- <img class="one" src="https://dummyimage.com/200x500/5e5d60/fff&text=Img-1" alt=""> -->
@@ -496,6 +524,9 @@
     
   -->
   <!-- Construciton Process Section -->
+  <!-- 
+    ! inline style for heading color -Done
+   -->
   <section class="contruction-process-section">
     <div class="container-fluid p-0">
       <div class="row g-0">
@@ -507,21 +538,21 @@
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4">
           <div class="process-content" style="background-color: #ededed;">
-            <h4>01.</h4>
+            <h4 style="color: #ffc601;">01.</h4>
             <h6>Plan / project</h6>
             <p>Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed do</p>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4">
           <div class="process-content" style="background-color: #f8f8f8;">
-            <h4>02.</h4>
+            <h4 style="color: #ffc601;">02.</h4>
             <h6>Design-Build</h6>
             <p>Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed do</p>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4">
           <div class="process-content" style="background-color: #ededed;">
-            <h4>03.</h4>
+            <h4 style="color: #ffc601;">03.</h4>
             <h6>Project Building</h6>
             <p>Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed do</p>
           </div>
@@ -730,9 +761,7 @@
     </div>
   </section>
 
-  <!-- 
-      ! Problem in positon 
-    -->
+
   <!-- Resent News Section -->
   <section id="newssection" class="recent-news-section">
     <div class="recent-news-wrap">
