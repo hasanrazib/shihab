@@ -128,7 +128,10 @@ html {
 /* ----------------- Navigation Section ----------------- */
 
 .navigation-section {
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
+    height: 100px;
+    display: flex;
+    align-items: center;
     font-family: var(--font-family-primary);
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
@@ -204,7 +207,7 @@ html {
     background-color: #fff;
     width: 180px;
     left: -10px;
-    top:263.5%;
+    top:255%;
     border: 1px solid #ebebeb;
 }
 
@@ -239,7 +242,7 @@ html {
 #search-bar {
     position: absolute;
     left: -235px;
-    top: 265%;
+    top: 259%;
     outline: none;
     width: 260px;
     padding: 10px 15px;

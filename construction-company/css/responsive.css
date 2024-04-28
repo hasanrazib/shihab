@@ -71,7 +71,8 @@
     } */
     
     .navigation-section {
-        padding: 10px 0px;
+        /* padding: 10px 0px; */
+        height: 60px;
     }
 
     .slicknav_nav {
@@ -79,7 +80,7 @@
     }
 
     #search-bar {
-        top: 222%;
+        top: 175%;
     }
 
     .about-bottom-img {
@@ -182,7 +183,8 @@
         padding-left: 10px;
     }
     .navigation-section {
-        padding: 0;
+        /* padding: 0; */
+        height: auto;
     }
 
     #search-bar {
