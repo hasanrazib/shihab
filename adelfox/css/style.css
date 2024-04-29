@@ -1,0 +1,88 @@
+/*  ==========================================================================
+    Helper classes
+    ==========================================================================  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* My Custom CSS */
+
+.sr-position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+}
+
+.sr-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sr-section-padding {
+    padding: 100px 0px;
+}
+
+.sr-section-title {
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #5f676c;
+    text-align: center;
+    line-height: 30px;
+}
+
+.sr-section-subtitle {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #9aa7af;
+    text-align: center;
+    line-height: 20px;
+}
+
+.sr-button {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+/*  ==========================================================================
+    Helper classes
+    ==========================================================================  */
+
+/* Top Section */
+.top-section {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #c8d3d9;
+    font-size: 12px;
+    border-bottom: 2px solid #bdbdbd;
+}
