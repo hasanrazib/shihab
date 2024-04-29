@@ -86,3 +86,8 @@ html {
     font-size: 12px;
     border-bottom: 2px solid #bdbdbd;
 }
+
+.top-section a {
+    color: #c8d3d9;
+    font-size: 12px;
+}
