@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.nav-menu').slicknav({
+    $('.desktop-menu').slicknav({
         prependTo: '.mobile-menu',
         label: '',
        allowParentLinks: true,
@@ -7,63 +7,31 @@ $(document).ready(function() {
       });
 });
 
-$('#team').owlCarousel({
+$('#hero').owlCarousel({
     loop:true,
-    margin:10,
+    margin:0,
     nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
+    items: 1,
+
 })
 
-$('#news').owlCarousel({
+$('#sub-hero').owlCarousel({
     loop:true,
-    margin:10,
+    margin: 0,
     nav:true,
     dots: false,
+    // autoWidth: true,
     responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
-
-$('#partners').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    dots: false,
-    autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        800:{
-            items:4
-        },
-        1000:{
-            items:5
-        }
-    }
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:5
+      }
+  }
 })
 
 const searchIcon = document.getElementById('search-btn');

@@ -8,9 +8,9 @@
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -35,20 +35,317 @@
 <body>
 
   <!-- Top Section -->
-  <section class="top-section">
-    <div class="container">
+  <section id="top" class="top-section">
+    <div class="container-md">
       <div class="row ">
-        <div class="col-6">
+        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6">
           <ul class="d-flex gap-4">
-            <li><i class="fa-regular fa-envelope" style="color: #8fcaee;"></i> <a href="mailto:tranmautritam@gmail.com">tranmautritam@gmail.com</a></li>
-            <li><i class="fa-solid fa-phone-volume" style="color: #8fcaee;"></i> <a href="tel:+84 935 815 989">+84 935 815 989</a></li>
+            <li><i class="fa-regular fa-envelope" style="color: #8fcaee;"></i> <a
+                href="mailto:tranmautritam@gmail.com">tranmautritam@gmail.com</a></li>
+            <li><i class="fa-solid fa-phone-volume" style="color: #8fcaee;"></i> <a href="tel:+84 935 815 989">+84 935
+                815 989</a></li>
             <li><i class="fa-brands fa-skype" style="color: #8fcaee;"></i> mr.crazykv</li>
           </ul>
         </div>
-        <div class="col-6 text-end">
+        <div class="col-sm-2 col-md-4 col-lg-6 col-xl-6 text-end">
           <div class="cart">
-            <i class="fa-solid fa-cart-shopping" style="color: #8fcaee;" ></i> Cart [<span style="color: #8fcaee;" class="fw-bolder">0</span>] item
+            <i class="fa-solid fa-cart-shopping" style="color: #8fcaee;"></i> Cart [<span style="color: #8fcaee;"
+              class="fw-bolder">0</span>] item
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 
+    !SlickNav Not Working Properly
+   -->
+  <!-- Navigation Section -->
+  <nav class="nav-section shadow-sm position-sticky top-0 z-3">
+    <div class="container-md">
+      <div class="row align-items-center">
+        <div class="col-6 col-lg-2">
+          <img src="images/full-logo.png" alt="logo" class="img-fluid">
+        </div>
+        <div class="col-6 col-lg-10">
+          <ul class="desktop-menu">
+            <li><a href="#top">home <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">pages <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">portfolio <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">shops <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">blog <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">shortcodes <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="#">features <i class="fa-solid fa-angle-down"></i></a></li>
+            <i id="search-btn" class="fa-solid fa-magnifying-glass" style="color: #adadad; font-size: 22px;"
+              autocomplete="off"></i>
+          </ul>
+          <ul class="mobile-menu">
+            <!-- <i id="search-btn" class="fa-solid fa-magnifying-glass" style="color: #adadad; font-size: 22px;" autocomplete="off"></i> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 
+    !Hero Image Size Problem
+   -->
+  <!-- Hero Slider -->
+  <section class="hero-slider">
+    <div id="hero" class="owl-carousel owl-theme">
+      <!-- Item -->
+      <div class="hero-card" style="background-image: url('https://dummyimage.com/1600x500/000/fff');">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+    !Slider Navigation Icon alignment Problem
+   -->
+  <!-- Sub Hero Slider -->
+  <section class="sr-section-padding subhero-slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="sub-hero" class="owl-carousel owl-theme">
+            <!-- Items -->
+            <div class="subhero-card" style="background-color: #21c2f8;">
+              <i class="fa-regular fa-paper-plane"></i>
+              <h6>responsive design</h6>
+              <p>Gravida tortor felis Ac dictum risus sagittis id morbi</p>
+            </div>
+            <!-- Items -->
+            <div class="subhero-card" style="background-color: #76beea;">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <h6>responsive design</h6>
+              <p>Gravida tortor felis Ac dictum risus sagittis id morbi</p>
+            </div>
+            <!-- Items -->
+            <div class="subhero-card" style="background-color: #0a8fc7;">
+              <i class="fa-regular fa-comment-dots"></i>
+              <h6>responsive design</h6>
+              <p>Gravida tortor felis Ac dictum risus sagittis id morbi</p>
+            </div>
+            <!-- Items -->
+            <div class="subhero-card" style="background-color: #0072a5;">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h6>responsive design</h6>
+              <p>Gravida tortor felis Ac dictum risus sagittis id morbi</p>
+            </div>
+            <!-- Items -->
+            <div class="subhero-card" style="background-color: #21c2f8;">
+              <i class="fa-regular fa-paper-plane"></i>
+              <h6>responsive design</h6>
+              <p>Gravida tortor felis Ac dictum risus sagittis id morbi</p>
+            </div>
+            <!-- Items -->
+            <div class="subhero-card" style="background-color: #76beea;">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <h6>responsive design</h6>
+              <p>Gravida tortor felis Ac dictum risus sagittis id morbi</p>
+            </div>
+            <!-- Items -->
+            <div class="subhero-card" style="background-color: #0a8fc7;">
+              <i class="fa-regular fa-comment-dots"></i>
+              <h6>responsive design</h6>
+              <p>Gravida tortor felis Ac dictum risus sagittis id morbi</p>
+            </div>
+            <!-- Items -->
+            <div class="subhero-card" style="background-color: #0072a5;">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h6>responsive design</h6>
+              <p>Gravida tortor felis Ac dictum risus sagittis id morbi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="sr-section-padding" style="background-color: #eff5f7;">
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col-12">
+          <h3 class="sr-section-title">Welcome to AdelFox Design</h3>
+          <h6 class="sr-section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deleniti
+            repellat expedita autem sit modi, iusto explicabo quis nisi eligendi.</h6>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <!-- Items -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="sr-card">
+            <div class="sr-position-relative card-img-bottom-border">
+              <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
+              <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
+              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+            </div>
+            <div class="sr-card-content">
+              <h5 class="sr-card-title">Our Mission</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
+                accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="sr-card">
+            <div class="sr-position-relative card-img-bottom-border">
+              <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
+              <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
+              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+            </div>
+            <div class="sr-card-content">
+              <h5 class="sr-card-title">Our Values</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
+                accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="sr-card">
+            <div class="sr-position-relative card-img-bottom-border">
+              <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
+              <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
+              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+            </div>
+            <div class="sr-card-content">
+              <h5 class="sr-card-title">Our Solution</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
+                accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Are you Ready to Enjoy -->
+  <section class="sr-section-padding">
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col-12">
+          <h3 class="sr-section-title">are you ready to enjoy</h3>
+          <h6 class="sr-section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deleniti
+            repellat expedita autem sit modi, iusto explicabo quis nisi eligendi.</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer style="background-color:#2f383d;">
+    <div class="border-bottom border-secondar-subtle border-1">
+      <div class="container">
+        <!-- Social Icons -->
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-socail-icons">
+              <img src="images/footer-icon1.png" alt="footer social icon">
+              <img src="images/footer-icon2.png" alt="footer social icon">
+              <img src="images/footer-icon3.png" alt="footer social icon">
+              <img src="images/footer-icon4.png" alt="footer social icon">
+              <img src="images/footer-icon5.png" alt="footer social icon">
+              <img src="images/footer-icon6.png" alt="footer social icon">
+              <img src="images/footer-icon7.png" alt="footer social icon">
+              <img src="images/footer-icon8.png" alt="footer social icon">
+              <img src="images/footer-icon9.png" alt="footer social icon">
+              <img src="images/footer-icon10.png" alt="footer social icon">
+              <img src="images/footer-icon11.png" alt="footer social icon">
+              <img src="images/footer-icon12.png" alt="footer social icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Main -->
+      <div class="row py-5">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="footer-content">
+            <img src="images/full-logo.png" alt="logo">
+            <p>Fusce gravida tortor felis, ac dictum risus sagittis id.
+              <br><br>
+              Donec volutpat, mi vel egestas eleifend, dolor arcu iaculis nunc. Fusce gravida tortor felis, ac dictum
+              risus sagittis id. Morbi posuere justo eleifend libero ultricies ultrices.
+              <br>
+              <a class="d-inline-block py-3 " href="#">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <h6 class="footer-content-title">
+            recent posts
+          </h6>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <h6 class="footer-content-title">
+            tags
+          </h6>
+          <span class="footer-tag">awesome</span>
+          <span class="footer-tag">photography</span>
+          <span class="footer-tag">web desing</span>
+          <span class="footer-tag">infographic</span>
+          <span class="footer-tag">guitar</span>
+          <span class="footer-tag">theme</span>
+          <span class="footer-tag">website</span>
+          <span class="footer-tag">artist design</span>
+          <span class="footer-tag">themeforest</span>
+          <span class="footer-tag">music</span>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <h6 class="footer-content-title">
+            Flickr Widget
+          </h6>
+          <div class="row g-2">
+            <div class="col-4">
+              <img class="img-fluid" src="https://dummyimage.com/400x400/202629/fff&text=+" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid" src="https://dummyimage.com/400x400/202629/fff&text=+" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid" src="https://dummyimage.com/400x400/202629/fff&text=+" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid" src="https://dummyimage.com/400x400/202629/fff&text=+" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid" src="https://dummyimage.com/400x400/202629/fff&text=+" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid" src="https://dummyimage.com/400x400/202629/fff&text=+" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright -->
+  <section class="copyright-section" style="background-color: #202629;">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <p>Copyright &copy; 2013 - Designed by tranmautritam</p>
+        </div>
+        <div class="col-8">
+          <ul class="footer-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">shortcodes</a></li>
+            <li><a href="#">Features</a></li>
+          </ul>
         </div>
       </div>
     </div>

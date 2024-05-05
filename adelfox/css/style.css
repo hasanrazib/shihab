@@ -30,10 +30,18 @@ html {
     scroll-behavior: smooth;
 }
 
-/* My Custom CSS */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
 
-.sr-position-center {
+/* My Custom CSS */
+.sr-position-relative {
+    position: relative;
+}
+.sr-position-absolute {
     position: absolute;
+}
+.sr-position-center {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -73,6 +81,18 @@ html {
     border-radius: 2px;
 }
 
+.sr-card {
+
+}
+
+.sr-card-content {
+
+}
+.sr-card-title {
+
+}
+
+
 /*  ==========================================================================
     Helper classes
     ==========================================================================  */
@@ -84,10 +104,241 @@ html {
     align-items: center;
     color: #c8d3d9;
     font-size: 12px;
-    border-bottom: 2px solid #bdbdbd;
+    border-bottom: 3px solid #c2c2c273;
 }
-
+.top-section i {
+    font-size: 16px;
+}
 .top-section a {
     color: #c8d3d9;
     font-size: 12px;
 }
+/* Top Section */
+
+/* Navigation Section */
+.nav-section {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.desktop-menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+}
+.desktop-menu li a {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #6d7a83;
+    font-weight: 600;
+}
+.mobile-menu {
+    display: none;
+}
+
+.slicknav_menu {
+    background: unset;
+}
+
+/* Navigation Section */
+
+/* Hero Slider */
+.hero-slider {
+    height: 500px;
+    background-color: red;
+}
+.hero-card {
+    height: 500px;
+    background-color: blue;
+    background-position: center;
+}
+
+
+/* Hero Slider */
+
+/* Sub Hero Slider */
+.subhero-card {
+    width: fit-content;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    padding: 10px;
+}
+.subhero-card h6{
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.subhero-card p{
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    text-transform: initial;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.subhero-card i {
+    /* background: red; */
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+.subhero-card:hover h6,
+.subhero-card:hover p {
+    opacity: 1;
+}
+
+/* Owl Customization */
+.subhero-slider .owl-carousel .owl-nav button.owl-prev {
+    background-color: red;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translate(-100%, -50%);
+}
+
+.subhero-slider .owl-carousel .owl-nav button.owl-next {
+    background-color: red;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 104%;
+    transform: translate(-104%, -50%);
+}
+
+/* Sub Hero Slider */
+
+/* Welcome Section */
+.sr-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px 0px;
+    text-transform: capitalize;
+    transition: all .5s ease-in;
+}
+.sr-card-content p{
+    font-size: 13px;
+    color: #b0bfc8;
+}
+.image-bottom-shape {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+.sr-card i {
+    font-size: 25px;
+    background-color: #49c5ef;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+.sr-card:hover .sr-card-title {
+    color: #49c5ef;
+}
+
+.card-img-bottom-border {
+    position: relative;
+}
+
+.card-img-bottom-border::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background-color: #76beea;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.sr-card:hover i,
+.sr-card:hover .image-bottom-shape,
+.sr-card:hover .card-img-bottom-border::after {
+    opacity: 1;
+}
+.sr-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Welcome Section */
+
+
+
+/* Footer Section */
+.footer-socail-icons {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content-title {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #d5e9f8;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.footer-content img {
+    padding-bottom: 20px;
+}
+
+.footer-tag {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 12px;
+    background-color: #202629;
+    color: #697782;
+    font-size: 14px;
+}
+
+.copyright-section {
+    padding: 20px 0px;
+}
+.copyright-section  p{
+    color: #6d7a83;
+    font-weight: 600;
+    font-size: 14px;
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu li a{
+    color: #6d7a83;
+    font-weight: 500;
+    font-size: 14px;
+}
+.footer-menu li:hover a{
+    color: #a8b8c3;
+}
+/* Footer Section */
