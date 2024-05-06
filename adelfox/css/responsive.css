@@ -4,8 +4,12 @@
         display: none;
     }
 	.mobile-menu {
-		display:block;
+		display:inline-block;
 	}
+	.nav-section {
+		padding: 20px 0px;
+	}
+
 }
 
 /************IPad**************/
@@ -19,7 +23,10 @@
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+	.slicknav_nav {
+		width: 50%;
+		left: 50%;
+	}
 
 }
 /* Mobile Layout: 320px. */

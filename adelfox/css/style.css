@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #5f676c;
     text-align: center;
     line-height: 30px;
+    padding-bottom: 15px;
 }
 
 .sr-section-subtitle {
@@ -76,8 +77,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .sr-button {
     text-transform: uppercase;
-    padding: 5px 10px;
-    font-size: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
     border-radius: 2px;
 }
 
@@ -97,7 +98,9 @@ h1, h2, h3, h4, h5, h6, p {
     Helper classes
     ==========================================================================  */
 
-/* Top Section */
+/*  ==========================================================================
+    Top Section
+    ==========================================================================  */
 .top-section {
     height: 40px;
     display: flex;
@@ -113,38 +116,118 @@ h1, h2, h3, h4, h5, h6, p {
     color: #c8d3d9;
     font-size: 12px;
 }
-/* Top Section */
 
-/* Navigation Section */
+/*  ==========================================================================
+    Navigation Section
+    ==========================================================================  */
 .nav-section {
-    height: 90px;
-    display: flex;
-    align-items: center;
+    /* padding: 20px 0px; */
     background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .desktop-menu {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 40px;
+    /* position: relative; */
 }
 .desktop-menu li a {
     text-transform: capitalize;
     font-size: 14px;
     color: #6d7a83;
     font-weight: 600;
+    padding-left: 10px;
+}
+.desktop-menu li {
+    padding: 30px 0px;
+    position: relative;
+}
+
+.desktop-menu > li > a::after {
+    content: '\25BC';
 }
 .mobile-menu {
     display: none;
 }
 
-.slicknav_menu {
-    background: unset;
+/* Slick nav */
+.nav-area {
+    display: flex; 
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.slicknav_menu  {
+    background: transparent;
+}
+.slicknav_nav {
+    position: absolute;
+    background-color: #8fcaee;
+    top: 140%;
+    left: 0;
+    width: 100%;
+}
+.slicknav_nav a {
+    text-transform: capitalize;
+    font-size: 14px;
 }
 
-/* Navigation Section */
+/* Submenu */
+.sub-menu li {
+    padding: 10px 0px;
+    position: relative;
+}
 
-/* Hero Slider */
+.sub-menu li a{
+    color: #fff;
+}
+.sub-menu li:hover {
+    background-color: #8fcaee;
+}
+
+.sub-menu, 
+.sub-sub-menu  {
+    display: none;
+}
+.desktop-menu li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    width: 220px;
+    background: #0072a5;
+    top: 100%;
+    left: 0;
+    border: 1px solid #000;
+}
+.desktop-menu li .sub-menu li:hover .sub-sub-menu {
+    display: block;
+    position: absolute;
+    background: #0072a5;
+    width: 220px;
+    left: 100%;
+    top: 0;
+    border: 1px solid #000;
+}
+
+.slicknav_nav .sub-menu li {
+    padding: 0;
+}
+.slicknav_nav .slicknav_row:hover {
+    background: none;
+}
+
+.slicknav_nav a:hover {
+    color: #fff;
+    background: unset;
+}
+.slicknav_nav .sub-menu li:hover {
+    background: unset;
+}
+/*  ==========================================================================
+    Hero Slider Section
+    ==========================================================================  */
 .hero-slider {
     height: 500px;
     background-color: red;
@@ -156,9 +239,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-/* Hero Slider */
-
-/* Sub Hero Slider */
+/*  ==========================================================================
+    Sub Hero Slider Section
+    ==========================================================================  */
 .subhero-card {
     width: fit-content;
     height: 250px;
@@ -227,9 +310,9 @@ h1, h2, h3, h4, h5, h6, p {
     transform: translate(-104%, -50%);
 }
 
-/* Sub Hero Slider */
-
-/* Welcome Section */
+/*  ==========================================================================
+    Welcome Section
+    ==========================================================================  */
 .sr-card-title {
     font-size: 15px;
     font-weight: 600;
@@ -287,12 +370,12 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10px;
     border-radius: 5px;
 }
-/* Welcome Section */
 
 
-
-/* Footer Section */
-.footer-socail-icons {
+/*  ==========================================================================
+    Footer Section
+    ==========================================================================  */
+.footer-social-icons {
     padding: 30px 0px;
     display: flex;
     justify-content: space-between;
@@ -341,4 +424,29 @@ h1, h2, h3, h4, h5, h6, p {
 .footer-menu li:hover a{
     color: #a8b8c3;
 }
-/* Footer Section */
+
+.footer-content p {
+    color: #8a9ca9;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+.recent-post {
+    margin-bottom: 10px;
+}
+.recent-post i {
+    opacity: 0;
+}
+.recent-post-title {
+    font-size: 13px;
+    color: #8a9ca9;
+}
+.date {
+    font-size: 12px;
+    color: #6d7a83;
+}
+.recent-post:hover i{
+    opacity: 1;
+}
+.recent-post:hover .recent-post-title{
+    color: #feffff;
+}

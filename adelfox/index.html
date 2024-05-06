@@ -38,16 +38,16 @@
   <section id="top" class="top-section">
     <div class="container-md">
       <div class="row ">
-        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6">
+        <div class="col-7 col-sm-6 col-md-8 col-lg-6 col-xl-6">
           <ul class="d-flex gap-4">
             <li><i class="fa-regular fa-envelope" style="color: #8fcaee;"></i> <a
                 href="mailto:tranmautritam@gmail.com">tranmautritam@gmail.com</a></li>
-            <li><i class="fa-solid fa-phone-volume" style="color: #8fcaee;"></i> <a href="tel:+84 935 815 989">+84 935
+            <li class="d-none d-md-block"><i class="fa-solid fa-phone-volume" style="color: #8fcaee;"></i> <a href="tel:+84 935 815 989">+84 935
                 815 989</a></li>
-            <li><i class="fa-brands fa-skype" style="color: #8fcaee;"></i> mr.crazykv</li>
+            <li class="d-none d-sm-block"><i class="fa-brands fa-skype" style="color: #8fcaee;"></i> mr.crazykv</li>
           </ul>
         </div>
-        <div class="col-sm-2 col-md-4 col-lg-6 col-xl-6 text-end">
+        <div class="col-5 col-sm-6 col-md-4 col-lg-6 col-xl-6 text-end">
           <div class="cart">
             <i class="fa-solid fa-cart-shopping" style="color: #8fcaee;"></i> Cart [<span style="color: #8fcaee;"
               class="fw-bolder">0</span>] item
@@ -61,29 +61,43 @@
   <!-- 
     !SlickNav Not Working Properly
    -->
-  <!-- Navigation Section -->
-  <nav class="nav-section shadow-sm position-sticky top-0 z-3">
-    <div class="container-md">
+  <nav class="nav-section shadow-sm">
+    <div class="container-md position-relative">
       <div class="row align-items-center">
         <div class="col-6 col-lg-2">
           <img src="images/full-logo.png" alt="logo" class="img-fluid">
         </div>
         <div class="col-6 col-lg-10">
-          <ul class="desktop-menu">
-            <li><a href="#top">home <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">pages <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">portfolio <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">shops <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">blog <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">shortcodes <i class="fa-solid fa-angle-down"></i></a></li>
-            <li><a href="#">features <i class="fa-solid fa-angle-down"></i></a></li>
+          <div class="nav-area">
+            <ul class="desktop-menu">
+              <li><a href="#top">home </a>
+                <ul class="sub-menu">
+                  <li><a href="">Sub Menu</a></li>
+                  <li><a href="">Sub Menu</a></li>
+                  <li><a href="">Sub Menu</a></li>
+                  <li><a href="">Sub Menu</a>
+                    <ul class="sub-sub-menu">
+                      <li><a href="">Sub - Menu</a></li>
+                      <li><a href="">Sub - Menu</a></li>
+                      <li><a href="">Sub - Menu</a></li>
+                      <li><a href="">Sub - Menu</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">pages </a></li>
+              <li><a href="#">portfolio </a>
+              </li>
+              <li><a href="#">shops </a></li>
+              <li><a href="#">blog </a></li>
+              <li><a href="#">shortcodes </a></li>
+              <li><a href="#">features </a></li>
+            </ul>
+            <div class="mobile-menu"></div>
             <i id="search-btn" class="fa-solid fa-magnifying-glass" style="color: #adadad; font-size: 22px;"
               autocomplete="off"></i>
-          </ul>
-          <ul class="mobile-menu">
-            <!-- <i id="search-btn" class="fa-solid fa-magnifying-glass" style="color: #adadad; font-size: 22px;" autocomplete="off"></i> -->
-          </ul>
-        </div>
+          </div>
+          </div>
       </div>
     </div>
   </nav>
@@ -177,46 +191,52 @@
       <div class="row gy-4">
         <!-- Items -->
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="sr-card">
-            <div class="sr-position-relative card-img-bottom-border">
-              <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
-              <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
-              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+          <a href="#">
+            <div class="sr-card">
+              <div class="sr-position-relative card-img-bottom-border">
+                <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
+                <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
+                <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Our Mission</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
+                  accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
+              </div>
             </div>
-            <div class="sr-card-content">
-              <h5 class="sr-card-title">Our Mission</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
-                accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
-            </div>
-          </div>
+          </a>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="sr-card">
-            <div class="sr-position-relative card-img-bottom-border">
-              <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
-              <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
-              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+          <a href="#">
+            <div class="sr-card">
+              <div class="sr-position-relative card-img-bottom-border">
+                <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
+                <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
+                <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Our Values</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
+                  accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
+              </div>
             </div>
-            <div class="sr-card-content">
-              <h5 class="sr-card-title">Our Values</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
-                accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
-            </div>
-          </div>
+          </a>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="sr-card">
-            <div class="sr-position-relative card-img-bottom-border">
-              <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
-              <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
-              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+          <a href="#">
+            <div class="sr-card">
+              <div class="sr-position-relative card-img-bottom-border">
+                <img src="https://dummyimage.com/600x400/c0ccd3/c0ccd3&text=+" class="img-fluid" alt="Card Image">
+                <img class="image-bottom-shape" src="images/Shape 1.png" alt="">
+                <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Our Solution</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
+                  accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
+              </div>
             </div>
-            <div class="sr-card-content">
-              <h5 class="sr-card-title">Our Solution</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur animi iste fugit ipsum
-                accusantium enim omnis, sapiente eligendi esse cupiditate laudantium</p>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -240,6 +260,24 @@
     </div>
   </section>
 
+  <!-- We Always try to create -->
+  <div class="section sr-section-padding" style="background-color: #1ab2e7;">
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col-12">
+          <h3 class="sr-section-title" style="color: #fff;">We Always Try to Create a Difference</h3>
+          <h6 class="sr-section-subtitle" style="color: #fff;">We Always Try to Create a Difference
+            If you see this worthy, please buy and don't forget to rate it 5 stars.</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="sr-button" style="color: #fff; background-color: #0072a5;">Perches now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer Section -->
   <footer style="background-color:#2f383d;">
     <div class="border-bottom border-secondar-subtle border-1">
@@ -247,7 +285,7 @@
         <!-- Social Icons -->
         <div class="row">
           <div class="col-12">
-            <div class="footer-socail-icons">
+            <div class="footer-social-icons">
               <img src="images/footer-icon1.png" alt="footer social icon">
               <img src="images/footer-icon2.png" alt="footer social icon">
               <img src="images/footer-icon3.png" alt="footer social icon">
@@ -267,7 +305,7 @@
     </div>
     <div class="container">
       <!-- Main -->
-      <div class="row py-5">
+      <div class="row g-4 py-5">
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <div class="footer-content">
             <img src="images/full-logo.png" alt="logo">
@@ -276,14 +314,50 @@
               Donec volutpat, mi vel egestas eleifend, dolor arcu iaculis nunc. Fusce gravida tortor felis, ac dictum
               risus sagittis id. Morbi posuere justo eleifend libero ultricies ultrices.
               <br>
-              <a class="d-inline-block py-3 " href="#">Learn More</a>
-            </p>
+            </p> 
+            <a style="color: #6d7a83; border-bottom: 2px solid #6d7a83; font-size: 13px;" href="#">Learn More</a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <h6 class="footer-content-title">
             recent posts
           </h6>
+          <div class="row recent-post">
+            <div class="col-4  sr-position-relative">
+              <img class="img-fluid" src="https://dummyimage.com/600x400/b3b3b3/fff&text=+" alt="">
+              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+            </div>
+            <div class="col-8">
+              <div class="recent-post-content">
+                <h6 class="recent-post-title">Fusce gravida tortor felis, ac dictum risus sagittis</h6>
+                <span class="date">October 15, 2013</span>
+              </div>
+            </div>
+          </div>
+          <div class="row recent-post">
+            <div class="col-4  sr-position-relative">
+              <img class="img-fluid" src="https://dummyimage.com/600x400/b3b3b3/fff&text=+" alt="">
+              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+            </div>
+            <div class="col-8">
+              <div class="recent-post-content">
+                <h6 class="recent-post-title">Fusce gravida tortor felis, ac dictum risus sagittis</h6>
+                <span class="date">October 15, 2013</span>
+              </div>
+            </div>
+          </div>
+          <div class="row recent-post">
+            <div class="col-4  sr-position-relative">
+              <img class="img-fluid" src="https://dummyimage.com/600x400/b3b3b3/fff&text=+" alt="">
+              <i class="fa-solid fa-plus sr-position-absolute sr-position-center"></i>
+            </div>
+            <div class="col-8">
+              <div class="recent-post-content">
+                <h6 class="recent-post-title">Fusce gravida tortor felis, ac dictum risus sagittis</h6>
+                <span class="date">October 15, 2013</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
           <h6 class="footer-content-title">
@@ -333,10 +407,10 @@
   <section class="copyright-section" style="background-color: #202629;">
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 text-center text-md-start">
           <p>Copyright &copy; 2013 - Designed by tranmautritam</p>
         </div>
-        <div class="col-8">
+        <div class="d-none d-md-block col-md-6 col-lg-7 col-xl-8">
           <ul class="footer-menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Pages</a></li>
