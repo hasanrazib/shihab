@@ -320,6 +320,12 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: capitalize;
     transition: all .5s ease-in;
 }
+
+.sr-card-subtitle {
+    font-size: 13px;
+    color: #6d7a83;
+    text-transform: capitalize;
+}
 .sr-card-content p{
     font-size: 13px;
     color: #b0bfc8;
@@ -371,6 +377,68 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 5px;
 }
 
+
+/*  ==========================================================================
+    Core Feature Section
+    ==========================================================================  */
+
+    
+
+/*  ==========================================================================
+    Team Section
+    ==========================================================================  */
+.team-card {
+    background-color: #fff;
+    padding-bottom: 30px;
+    position: relative;
+}
+.team-card::after {
+    content: '';
+    transition: all .5s ease-in-out;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #49c5ef;
+    opacity: 0;
+}
+.team-card .sr-card-content {
+    padding: 10px;
+}
+.team-card-img::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #49c5ef;
+    top: 0;
+    left: 0;
+}
+.team-card i {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.team-card:hover i,
+.team-card:hover:after {
+    opacity: 1;
+}
+
+.team-social-link {
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.team-social-link i {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+}
 
 /*  ==========================================================================
     Footer Section
@@ -444,8 +512,25 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 12px;
     color: #6d7a83;
 }
+
+.recent-post-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #21c2f8;
+    display: none;
+}
+.recent-post:hover .recent-post-img::after {
+    display: block;
+}
+
 .recent-post:hover i{
     opacity: 1;
+    z-index: 2;
+    color: #fff;
 }
 .recent-post:hover .recent-post-title{
     color: #feffff;
