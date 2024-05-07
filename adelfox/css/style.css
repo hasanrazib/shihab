@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     /* position: relative; */
 }
 .desktop-menu li a {
@@ -379,10 +379,73 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /*  ==========================================================================
-    Core Feature Section
+    Feature Products Section
+    ==========================================================================  */
+.feature-product-list {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.feature-product-list li{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.feature-product-list li::before{
+    content: '\2022';
+    padding-right: 5px;
+}
+
+.list-active {
+    background-color: #21c2f8;
+    color: #fff;
+}
+
+
+/*  ==========================================================================
+    breaking news Section
     ==========================================================================  */
 
-    
+.breaking-news-card-image::after {
+    content: '';
+    position: absolute;
+    background-color: #21c2f8;
+    width: 100%;
+    height: 6px;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.breaking-news-card-image img {
+    min-width: 150px;
+}
+
+.breaking-news-card:hover .news-date {
+    background-color: #000;
+    color: #fff;
+}
+.breaking-news-card:hover .breaking-news-card-image::after {
+    background-color: #000;
+}
+
+.news-date {
+    top: 5px;
+    left: 20px;
+    background-color: #21c2f8;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+}
+.news-date span {
+    font-size: 30px;
+    line-height: 1;
+}
 
 /*  ==========================================================================
     Team Section
@@ -413,12 +476,15 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #49c5ef;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: all .5s ease-in-out;
 }
 .team-card i {
     opacity: 0;
     transition: all .5s ease-in-out;
 }
 .team-card:hover i,
+.team-card:hover .team-card-img::after,
 .team-card:hover:after {
     opacity: 1;
 }
