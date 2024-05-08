@@ -21,6 +21,7 @@ $('#sub-hero').owlCarousel({
     nav:true,
     dots: false,
     // autoWidth: true,
+    center: true,
     responsive:{
       0:{
           items:1
@@ -59,6 +60,67 @@ $('#team').owlCarousel({
       }
   }
 })
+$('#feature-products').owlCarousel({
+    loop:true,
+    margin: 10,
+    nav:true,
+    dots: false,
+    // autoWidth: true,
+    center:true,
+    responsive:{
+      0:{
+          items:1
+      },
+      400:{
+          items:1
+      },
+      700:{
+          items:3
+      },
+      1000:{
+          items:4
+      },
+      1200:{
+          items:5
+      }
+  }
+})
+
+$('#happy-customers').owlCarousel({
+    loop:true,
+    margin: 10,
+    // nav:true,
+    dots: false,
+    // autoWidth: true,
+    // center:true,
+    responsive:{
+      0:{
+          items:1
+      },
+      400:{
+          items:1
+      },
+      700:{
+          items:3
+      },
+      1000:{
+          items:4
+      },
+      1200:{
+          items:5
+      }
+  }
+})
+$('#customers-review').owlCarousel({
+    loop:true,
+    margin: 10,
+    // nav:true,
+    dots: false,
+    // autoWidth: true,
+    center:true,
+    items: 1,
+})
+
 
 const searchIcon = document.getElementById('search-btn');
 const searchBar = document.getElementById('search-bar')

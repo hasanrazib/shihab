@@ -76,6 +76,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .sr-button {
+    display: inline-block;
     text-transform: uppercase;
     padding: 12px 20px;
     font-size: 14px;
@@ -91,6 +92,32 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .sr-card-title {
 
+}
+
+/* Slick Slider */
+.slick-prev {
+    right: 100%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+}
+.slick-next {
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #fff;
+    padding: 20px;
+    background-color: #74a7c1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    outline: 1px solid #000;
 }
 
 
@@ -291,23 +318,46 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 1;
 }
 
+.subhero-card:hover{
+    scale: 1.1;
+}
+
 /* Owl Customization */
-.subhero-slider .owl-carousel .owl-nav button.owl-prev {
-    background-color: red;
-    padding: 10px;
+/* .subhero-slider .owl-carousel {
+    width: 76%;
+    padding: 0px 20px;
+    margin: auto;
+} */
+.subhero-slider .owl-carousel .owl-nav .owl-prev{
     position: absolute;
     top: 50%;
     right: 100%;
-    transform: translate(-100%, -50%);
+    transform: translate(0, -50%);
+    border: 1px solid #0072a5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
-.subhero-slider .owl-carousel .owl-nav button.owl-next {
-    background-color: red;
-    padding: 10px;
+.subhero-slider .owl-carousel .owl-nav .owl-next{
     position: absolute;
     top: 50%;
-    left: 104%;
-    transform: translate(-104%, -50%);
+    left: 100%;
+    transform: translate(0, -50%);
+    border: 1px solid #0072a5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.subhero-slider .owl-carousel .owl-nav span{
+    font-size: 25px;
+    line-height: 0;
+    color: #0072a5;
+}
+
+.subhero-slider .owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: #76beea;
 }
 
 /*  ==========================================================================
@@ -404,6 +454,94 @@ h1, h2, h3, h4, h5, h6, p {
     color: #fff;
 }
 
+.feature-card .sr-card-content{
+    background-color: #eff5f7;
+    padding: 20px 0px;
+    text-align: center;
+    transition: all .5s ease-in;
+}
+.feature-card .sr-card-title{
+    padding: 0;
+    padding-bottom: 5px;
+    transition: none;
+}
+
+.img-hover-bg::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #21c2f8;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.feature-icon {
+    opacity: 0;
+    transition: all .5s ease-in;
+    z-index: 5;
+}
+
+/* .feature-section .owl-carousel .owl-item img {
+    width: initial;
+} */
+
+.feature-card-hover-img {
+    width: 10px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all .5s ease-in;
+    z-index: 2;
+}
+
+.feature-card:hover .feature-icon,
+.feature-card:hover .feature-card-hover-img,
+.feature-card:hover .img-hover-bg::after {
+    opacity: 1;
+}
+
+.feature-card:hover .sr-card-content {
+    background-color: #2f383d;
+    color: #fff;
+}
+
+/* Owl Nav */
+.feature-section .owl-carousel{
+    width: 80%;
+    padding: 0px 20px;
+    margin: auto;
+}
+.feature-section .owl-carousel .owl-nav .owl-prev{
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    transform: translate(-15%, -50%);
+    background-color: #74a7c1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.feature-section .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top: 50%;
+    right: -22%;
+    transform: translate(-22%, -50%);
+    background-color: #74a7c1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.feature-section .owl-carousel .owl-nav span{
+    font-size: 20px;
+    line-height: 0;
+    color: #fff;
+}
 
 /*  ==========================================================================
     breaking news Section
@@ -448,12 +586,61 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /*  ==========================================================================
+    Happy Customer Section
+    ==========================================================================  */
+/* .happy-customers-section .owl-carousel .owl-item img {
+    width: initial;
+} */
+
+.happy-customers-section .owl-carousel {
+    width: 80%;
+    margin: auto;
+}
+
+.happy-customers-section .owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.happy-customers-logo {
+    max-width: 120px;
+}
+
+.review-item {
+    color: #fff;
+}
+
+.review {
+    border: 2px solid #fff;
+    padding: 10px;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+}
+.review p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.review-item span{
+    font-size: 13px;
+}
+
+.review-item h6{
+    font-size: 15px;
+}
+
+/*  ==========================================================================
     Team Section
     ==========================================================================  */
 .team-card {
     background-color: #fff;
     padding-bottom: 30px;
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 .team-card::after {
     content: '';
@@ -479,20 +666,24 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 0;
     transition: all .5s ease-in-out;
 }
-.team-card i {
-    opacity: 0;
-    transition: all .5s ease-in-out;
-}
-.team-card:hover i,
+
 .team-card:hover .team-card-img::after,
-.team-card:hover:after {
+.team-card:hover::after {
     opacity: 1;
 }
 
 .team-social-link {
     bottom: 0;
     right: 0;
+    transform: translateX(100%);
     z-index: 1;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.team-card:hover .team-social-link {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .team-social-link i {
@@ -600,4 +791,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .recent-post:hover .recent-post-title{
     color: #feffff;
+}
+
+
+.phone-bg {
+    background-image: url(../images/phone.png); background-repeat: no-repeat; background-position: center; height: 500px;
+    background-size: cover;
 }

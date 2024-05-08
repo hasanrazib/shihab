@@ -21,6 +21,9 @@
   <!-- Owl CSS -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- Slick SLider CSS -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <!-- Lightbox CSS -->
   <link rel="stylesheet" href="css/lightbox.min.css">
   <!-- ColorBox CSS -->
@@ -243,25 +246,35 @@
   </section>
 
   <!-- Are you Ready to Enjoy -->
-  <section class="sr-section-padding">
+  <section class="sr-section-padding" style="background-image: url(images/enjoy-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;">
     <div class="container">
       <div class="row pb-5">
         <div class="col-12">
-          <h3 class="sr-section-title">are you ready to enjoy</h3>
-          <h6 class="sr-section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deleniti
+          <h3 class="sr-section-title" style="color: #fff;">are you ready to enjoy</h3>
+          <h6 class="sr-section-subtitle" style="color: #fff;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam deleniti
             repellat expedita autem sit modi, iusto explicabo quis nisi eligendi.</h6>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-
+          <div class="text-center">
+            <a href="#" class="sr-button" style="background-color: #fff;">read more</a>
+            <a href="#" class="sr-button" style="background-color: #0072a5; color: #fff;">purchase now</a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="my-3 phone-bg"></div>
   </section>
 
+  <!-- 
+    ! Full with slider
+   -->
   <!-- Featured products Section -->
-  <section class="sr-section-padding">
+  <section class="feature-section sr-section-padding">
     <div class="container">
       <div class="row pb-5">
         <div class="col-12">
@@ -275,22 +288,117 @@
           </ul>
         </div>
       </div>
-
       <div class="row">
-        <div id="feature" class="owl-carousel owl-theme">
-          <!-- Feature Items -->
-          <div class="">
-            <div class="">
-              <img class="img-fluid" src="https://dummyimage.com/300x200/c0ccd3/fff&text=+" alt="">
+        <div class="col-12">
+          <div id="feature-products" class="owl-carousel owl-theme">
+            <!-- Featured Card Items -->
+            <div class="feature-card">
+              <div class="img-hover-bg sr-position-relative">
+                <img class="img-fluid" src="https://dummyimage.com/300x200/c0ccd3/fff&text=+" alt="feature products">
+                <div class="d-flex gap-2 feature-icon sr-position-absolute sr-position-center">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center p-2 bg-white"></i>
+                  <i class="fa-solid fa-plus p-2 bg-white"></i>
+                </div>
+                <img class="feature-card-hover-img sr-position-absolute" style="width: initial;" src="images/feature-card-hover-img.png" alt="icon">
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Maecenas Bibendum</h5>
+                <p>Marketing Online</p>
+              </div>
             </div>
-            <div class="sr-card-content">
-              <h5 class="sr-card-title">Maecenas Bibendum</h5>
-              <p>Marketing Online</p>
+            <!-- Featured Card Items -->
+            <div class="feature-card">
+              <div class="img-hover-bg sr-position-relative">
+                <img class="img-fluid" src="https://dummyimage.com/300x200/c0ccd3/fff&text=+" alt="feature products">
+                <div class="d-flex gap-2 feature-icon sr-position-absolute sr-position-center">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center p-2 bg-white"></i>
+                  <i class="fa-solid fa-plus p-2 bg-white"></i>
+                </div>
+                <img class="feature-card-hover-img sr-position-absolute" style="width: initial;" src="images/feature-card-hover-img.png" alt="icon">
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Maecenas Bibendum</h5>
+                <p>Marketing Online</p>
+              </div>
+            </div>
+            <!-- Featured Card Items -->
+            <div class="feature-card">
+              <div class="img-hover-bg sr-position-relative">
+                <img class="img-fluid" src="https://dummyimage.com/300x200/c0ccd3/fff&text=+" alt="feature products">
+                <div class="d-flex gap-2 feature-icon sr-position-absolute sr-position-center">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center p-2 bg-white"></i>
+                  <i class="fa-solid fa-plus p-2 bg-white"></i>
+                </div>
+                <img class="feature-card-hover-img sr-position-absolute" style="width: initial;" src="images/feature-card-hover-img.png" alt="icon">
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Maecenas Bibendum</h5>
+                <p>Marketing Online</p>
+              </div>
+            </div>
+            <!-- Featured Card Items -->
+            <div class="feature-card">
+              <div class="img-hover-bg sr-position-relative">
+                <img class="img-fluid" src="https://dummyimage.com/300x200/c0ccd3/fff&text=+" alt="feature products">
+                <div class="d-flex gap-2 feature-icon sr-position-absolute sr-position-center">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center p-2 bg-white"></i>
+                  <i class="fa-solid fa-plus p-2 bg-white"></i>
+                </div>
+                <img class="feature-card-hover-img sr-position-absolute" style="width: initial;" src="images/feature-card-hover-img.png" alt="icon">
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Maecenas Bibendum</h5>
+                <p>Marketing Online</p>
+              </div>
+            </div>
+            <!-- Featured Card Items -->
+            <div class="feature-card">
+              <div class="img-hover-bg sr-position-relative">
+                <img class="img-fluid" src="https://dummyimage.com/300x200/c0ccd3/fff&text=+" alt="feature products">
+                <div class="d-flex gap-2 feature-icon sr-position-absolute sr-position-center">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center p-2 bg-white"></i>
+                  <i class="fa-solid fa-plus p-2 bg-white"></i>
+                </div>
+                <img class="feature-card-hover-img sr-position-absolute" style="width: initial;" src="images/feature-card-hover-img.png" alt="icon">
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Maecenas Bibendum</h5>
+                <p>Marketing Online</p>
+              </div>
+            </div>
+            <!-- Featured Card Items -->
+            <div class="feature-card">
+              <div class="img-hover-bg sr-position-relative">
+                <img class="img-fluid" src="https://dummyimage.com/300x200/c0ccd3/fff&text=+" alt="feature products">
+                <div class="d-flex gap-2 feature-icon sr-position-absolute sr-position-center">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center p-2 bg-white"></i>
+                  <i class="fa-solid fa-plus p-2 bg-white"></i>
+                </div>
+                <img class="feature-card-hover-img sr-position-absolute" style="width: initial;" src="images/feature-card-hover-img.png" alt="icon">
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Maecenas Bibendum</h5>
+                <p>Marketing Online</p>
+              </div>
+            </div>
+            <!-- Featured Card Items -->
+            <div class="feature-card">
+              <div class="img-hover-bg sr-position-relative">
+                <img class="img-fluid" src="https://dummyimage.com/300x200/c0ccd3/fff&text=+" alt="feature products">
+                <div class="d-flex gap-2 feature-icon sr-position-absolute sr-position-center">
+                  <i class="fa-solid fa-up-right-and-down-left-from-center p-2 bg-white"></i>
+                  <i class="fa-solid fa-plus p-2 bg-white"></i>
+                </div>
+                <img class="feature-card-hover-img sr-position-absolute" style="width: initial;" src="images/feature-card-hover-img.png" alt="icon">
+              </div>
+              <div class="sr-card-content">
+                <h5 class="sr-card-title">Maecenas Bibendum</h5>
+                <p>Marketing Online</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
     <!-- Breaking News Section -->
@@ -382,7 +490,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center py-4">
+        <div class="text-center pt-5">
           <a href="#" class="sr-button" style="background-color: #21c2f8; color:#fff;">load more post</a>
         </div>
         </div>
@@ -393,23 +501,94 @@
     ! Need Logo
    -->
   <!-- Happy Customers -->
-  <section class="sr-section-padding"
-  style="background-image: url('images/happy-customer-bg.png'); background-repeat: no-repeat;"
+  <section class="happy-customers-section sr-section-padding"
+  style="background-image: url('images/happy-customer-bg.png'); background-repeat: no-repeat; background-size: cover;"
   >
     <div class="container">
       <div class="row pb-5">
         <div class="col-12">
-          <h3 class="sr-section-title">our happy customers</h3>
+          <h3 class="sr-section-title" style="color: #fff;">our happy customers</h3>
+        </div>
+      </div>
+      <!-- Customers Logos -->
+      <div class="row pb-3">
+        <div class="col-12">
+          <div id="happy-customers" class="owl-carousel owl-theme">
+            <div class="d-flex justify-content-center">
+              <img class="happy-customers-logo" src="images/customer-icon-1.png" alt="customer logo">
+            </div>
+            <div class="d-flex justify-content-center">
+              <img class="happy-customers-logo" src="images/customer-icon-2.png" alt="customer logo">
+            </div>
+            <div class="d-flex justify-content-center">
+              <img class="happy-customers-logo" src="images/customer-icon-3.png" alt="customer logo">
+            </div>
+            <div class="d-flex justify-content-center">
+              <img class="happy-customers-logo" src="images/customer-icon-4.png" alt="customer logo">
+            </div>
+            <div class="d-flex justify-content-center">
+              <img class="happy-customers-logo" src="images/customer-icon-5.png" alt="customer logo">
+            </div>
+            <div class="d-flex justify-content-center">
+              <img class="happy-customers-logo" src="images/customer-icon-6.png" alt="customer logo">
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-12">
-
-        </div>
-        <div class="col-12">
-          <div class="customers-review">
-
+          <div id="customers-review" class="owl-carousel owl-theme">
+            <!-- Review -->
+            <div class="review-item">
+                <div class="review">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odio non in reiciendis magnam incidunt illo quia tempora provident quaerat aspernatur, eveniet repudiandae</p>
+                </div>
+                <div class="text-center">
+                  <h6>John Doe</h6>
+                  <span>Depla Mag Company</span>
+                </div>
+            </div>
+            <!-- Review -->
+            <div class="review-item">
+                <div class="review">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odio non in reiciendis magnam incidunt illo quia tempora provident quaerat aspernatur, eveniet repudiandae</p>
+                </div>
+                <div class="text-center">
+                  <h6>John Doe</h6>
+                  <span>Depla Mag Company</span>
+                </div>
+            </div>
+            <!-- Review -->
+            <div class="review-item">
+                <div class="review">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odio non in reiciendis magnam incidunt illo quia tempora provident quaerat aspernatur, eveniet repudiandae</p>
+                </div>
+                <div class="text-center">
+                  <h6>John Doe</h6>
+                  <span>Depla Mag Company</span>
+                </div>
+            </div>
+            <!-- Review -->
+            <div class="review-item">
+                <div class="review">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odio non in reiciendis magnam incidunt illo quia tempora provident quaerat aspernatur, eveniet repudiandae</p>
+                </div>
+                <div class="text-center">
+                  <h6>John Doe</h6>
+                  <span>Depla Mag Company</span>
+                </div>
+            </div>
+            <!-- Review -->
+            <div class="review-item">
+                <div class="review">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odio non in reiciendis magnam incidunt illo quia tempora provident quaerat aspernatur, eveniet repudiandae</p>
+                </div>
+                <div class="text-center">
+                  <h6>John Doe</h6>
+                  <span>Depla Mag Company</span>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -526,7 +705,10 @@
   </section>
 
   <!-- We Always try to create -->
-  <div class="section sr-section-padding" style="background-color: #1ab2e7;">
+  <div class="section sr-section-padding" style="background-image: url(images/call-to-action-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;">
     <div class="container">
       <div class="row pb-5">
         <div class="col-12">
@@ -704,6 +886,8 @@
   <script src="js/jquery.slicknav.min.js"></script>
   <!-- Owl JS -->
   <script src="js/owl.carousel.min.js"></script>
+  <!-- Slick Slider js -->
+  <script src="js/slick.min.js"></script>
   <!-- Lightbox JS -->
   <script src="js/lightbox.min.js"></script>
   <!-- ColorBox JS -->
