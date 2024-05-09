@@ -21,7 +21,7 @@ $('#sub-hero').owlCarousel({
     nav:true,
     dots: false,
     // autoWidth: true,
-    center: true,
+    center: false,
     responsive:{
       0:{
           items:1
@@ -29,7 +29,13 @@ $('#sub-hero').owlCarousel({
       600:{
           items:2
       },
+      700:{
+          items:3
+      },
       1000:{
+          items:4
+      },
+      1200:{
           items:5
       }
   }
@@ -67,6 +73,7 @@ $('#feature-products').owlCarousel({
     dots: false,
     // autoWidth: true,
     center:true,
+    stagePadding: 25,
     responsive:{
       0:{
           items:1
