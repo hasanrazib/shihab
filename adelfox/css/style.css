@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: inline-block;
     text-transform: uppercase;
     padding: 10px 18px;
-    font-size: 14px;
+    font-size: 13px;
     border-radius: 2px;
 }
 
@@ -186,7 +186,93 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 15px;
     color: #2f383d;
     text-transform: capitalize;
+    padding-bottom: 12px;
 }
+
+.sr-table-content tr td {
+    font-size: 13px;
+    color: #b0bfc8;
+    text-transform: capitalize;
+}
+
+.sr-table-content tr td:nth-child(even) {
+    color: #000;
+}
+
+.sr-table-content td {
+    padding-right: 22px;
+}
+
+.sr-table-content td a {
+    color: #21c2f8;
+}
+
+/* .shape-hex {
+    margin-top: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: red;
+    border-color: red;
+    position: relative;
+    display: inline-block;
+}
+.shape-hex:before {
+    content: "";
+    width: 0; height: 0;
+    border-bottom: 30px solid;
+    border-color: inherit;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+}
+.shape-hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid;
+    border-color: inherit;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+} */
+
+.shape-hexagon {
+    /* background: #bb0000; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    height: 87px;
+    margin: 0 auto;
+    position: relative;
+    width: 50px;
+    z-index: 1;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.shape-hexagon:before, .shape-hexagon:after {
+    background: inherit;
+    content: '';
+    height: inherit;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    z-index: -1;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.shape-hexagon:before {
+    transform: rotate(-60deg);
+}
+.shape-hexagon:after {
+    transform: rotate(60deg);
+}
+
+
 
 
 /*  ==========================================================================
@@ -464,22 +550,7 @@ h1, h2, h3, h4, h5, h6, p {
     transition: all 1s ease-in-out;
 }
 
-.subhero-card i {
-    /* background: red; */
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #fff;
-    outline: 2px solid #fff;
-    outline-offset: 4px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 24px;
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-}
+
 
 .subhero-card:hover h6,
 .subhero-card:hover p {
@@ -1030,4 +1101,234 @@ h1, h2, h3, h4, h5, h6, p {
     /* Inner page */
 .stat-rating i {
     color: #21c2f8;
+}
+
+/* Owl Customization */
+.portfolio-inner-section .owl-theme .owl-dots {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
+.portfolio-inner-section .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #21c2f8;
+    border: 1px solid #fff;
+}
+
+.portfolio-inner-section .owl-theme .owl-dots .owl-dot span {
+    background-color: rgb(177, 177, 177);
+}
+
+.portfolio-inner-section button.owl-prev,
+.portfolio-inner-section button.owl-next {
+    position: absolute;
+    top: 50%;
+}
+.portfolio-inner-section button.owl-prev {
+    left: 3%;
+    transform: translate(-3%, -50%);
+}
+
+.portfolio-inner-section button.owl-next {
+    right: 3%;
+    transform: translate(-3%, -50%);
+}
+
+.portfolio-inner-section button.owl-prev span,
+.portfolio-inner-section button.owl-next span {
+    background-color: rgba(128, 128, 128, 0.697);
+    padding: 2px 10px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.portfolio-inner-section .owl-theme .owl-nav [class*=owl-] {
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-inner-section .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+
+/*  ==========================================================================
+    Error Page
+    ==========================================================================  */
+.error-large-title {
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #6d7a83;
+    padding-bottom: 60px;
+}
+
+.error-page-content {
+    color: #9aa7af;
+    font-size: 14px;
+    padding-bottom: 60px;
+}
+
+.error-section-title {
+    font-size: 24px;
+    line-height: 2;
+}
+
+.error-page-search {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    width: 60%;
+    margin: auto;
+}
+
+.error-page-search input {
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    border: 1px solid #d7d7d7;
+    outline: none;
+    color: #6a6a6a;
+}
+.error-page-search i {
+    rotate: 90deg;
+    background-color: #21c2f8;
+    color: #fff;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/*  ==========================================================================
+    Contact Page
+    ==========================================================================  */
+
+.icon-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-bg i{
+    width: 80px;
+    height: 80px;
+    border: 4px solid #13c4f9;
+    background-color: #13c4f9;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    font-size: 25px;
+}
+
+.icon-bg:hover i{
+    background-color: #2f383d;
+}
+
+.icon-card h6 {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.icon-card p,
+.icon-card p a {
+    font-size: 13px;
+    color: #99abb7;
+}
+
+.contact-input input {
+    width: 100%;
+    height: 45px;
+    padding: 20px 40px 20px 20px;
+    color: #5f676c;
+    border: 1px solid #d6dbe1;
+    outline: none;
+}
+
+.contact-input textarea {
+    resize: none;
+    border: 1px solid #d6dbe1;
+    outline: none;
+}
+.contact-input {
+    position: relative;
+}
+
+.contact-input i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-15px ,-50%);
+    color: #5f676c;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #21c2f8;
+    border: none;
+    border-bottom: 2px solid #0a8fc7;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*  ==========================================================================
+    Service Page
+    ==========================================================================  */
+
+.core-services .icon-bg i{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border: 1px solid #0a8fc7;
+    margin: 2px;
+    color: #0a8fc7;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    font-size: 25px;
+}
+
+.core-services .icon-bg {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: all .3s ease-in-out;
+}
+
+.core-services .icon-card:hover .icon-bg,
+.core-services .icon-card:hover .icon-bg i {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.core-services .icon-card:hover h6 {
+    color: #0a8fc7;
+}
+
+.read-more {
+    text-transform: capitalize;
+    font-size: 12px;
+    background-color: #0a8fc7;
+    padding: 7px;
+    border-radius: 6px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.core-services .icon-card:hover .read-more {
+    background-color: #000;
 }

@@ -15,6 +15,13 @@ $('#hero').owlCarousel({
 
 })
 
+$('#portfolio-inner').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    items: 1,
+})
+
 $('#sub-hero').owlCarousel({
     loop:true,
     margin: 0,
