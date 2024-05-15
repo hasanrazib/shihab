@@ -36,6 +36,9 @@ h1, h2, h3, h4, h5, h6, p {
 audio {
     width: 100%;
 }
+hr {
+    margin: 5px 0px;
+}
 
 /* My Custom CSS */
 .sr-position-relative {
@@ -1241,6 +1244,7 @@ audio {
     /* Inner page */
 .stat-rating i {
     color: #21c2f8;
+    font-size: 14px;
 }
 
 /* Owl Customization */
@@ -1429,8 +1433,8 @@ audio {
     ==========================================================================  */
 
 .core-services .icon-bg i{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: #fff;
     border: 1px solid #0a8fc7;
     margin: 2px;
@@ -1583,6 +1587,17 @@ audio {
 
 .price-card:hover .hot {
     background-color: #1ebaee;
+}
+
+.social-icons i {
+    font-size: 11px;
+    padding: 4px;
+    background-color: #a1b1bc;
+    color: #fff;
+}
+
+.service-testimonial .testimonial .nav-tabs {
+    border: unset;
 }
 
 /*  ==========================================================================
@@ -1859,7 +1874,7 @@ audio {
 
 /*  ==========================================================================
     About Page
-        ==========================================================================  */
+    ==========================================================================  */
 .about-section-team .team-social-link {
 
     /* transform: translateX(100%); */
@@ -1972,4 +1987,265 @@ audio {
 
 .about-section-service .sr-card-content {
     background-color: #fff;
+}
+
+/*  ==========================================================================
+    About Page
+    ==========================================================================  */
+
+.blog-details-section .blog-comments {
+    padding: 10px 0px;
+}
+
+.blog-details-section .sr-card-content p {
+    padding: 10px 0px;
+}
+
+.box-with-left-border {
+    border: 1px solid #e4ebed;
+    position: relative;
+    margin: 10px 0px;
+    padding: 5px 20px;
+}
+
+.blog-quote {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-with-left-border::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: #13c4f9;
+    left: 0;
+    top: 0;
+}
+
+.blog-quote i {
+    background-color: #13c4f9;
+    color: #fff;
+    display: block;
+    min-width: 33px;
+    min-height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.blog-quote p {
+    font-size: 16px;
+}
+
+.share-post {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    color: #2f383d;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.share-post i {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e4ebed;
+    border-radius: 50%;
+    color: #707374;
+    transition: all .3s ease-in-out;
+}
+
+.share-post i:hover {
+    background-color: #13c4f9;
+    color: #fff;
+}
+
+.blog-admin {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-admin img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.blog-admin h5 {
+    padding: 0;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.blog-admin span {
+    font-size: 13px;
+    color: #b0bfc8;
+}
+
+select {
+    font-family: 'FontAwesome', 'Second Font name';
+    /* color: red; */
+}
+
+.blog-tags {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.blog-tags-title {
+    color: #13c4f9;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.blog-link {
+    color: #13c4f9;
+    text-decoration: underline #13c4f9;
+}
+
+.link {
+    color: #13c4f9;
+}
+
+.blog-post-comments-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0px;
+    border-top: 1px solid #e4ebed;
+    border-bottom: 1px solid #e4ebed;
+    margin-bottom: 20px;
+}
+
+.blog-post-comments-heading p,
+.blog-post-comments-heading i {
+    color: #13c4f9;
+    font-weight: bold;
+}
+
+.comments {
+    border-bottom: 1px solid #a4b1ba;
+    margin-bottom: 10px;
+}
+.comment-content {
+    
+}
+.comment-by {
+    font-size: 15px;
+    color: #13c4f9;
+}
+.comment-actions {
+    font-size: 12px;
+    /* gap: 10px; */
+    display: flex;
+    color: #13c4f9;
+}
+
+.comment-actions li::after {
+    content: '/';
+}
+
+.comment-actions li::after {
+    content: '/';
+    padding: 0px 8px;
+    color: #a4b1ba;
+}
+
+.comment-actions li:last-child:after {
+    content: '';
+    padding: 0;
+}
+
+.comment-actions li:first-child {
+    color: #a4b1ba;
+}
+
+.comments img {
+}
+
+/*  ==========================================================================
+    Team Page
+    ==========================================================================  */
+.testimonial img {
+    width: 80px;
+}
+
+.testimonial .nav-link {
+    padding: 4px;
+}
+
+.testimonial .nav {
+    gap: 10px;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+.testimonial-by {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.testimonial-by h6 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.testimonial-by i {
+    font-size: 13px;
+    color: #a1b1bc;
+}
+
+.testimonial-by img {
+    border: 1px dotted #13c4f9;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.testimonial .nav-link {
+    filter: grayscale(100%);
+}
+
+.testimonial .nav-tabs .nav-link.active {
+    filter: grayscale(0%);
+}
+
+
+.testimonial .nav-tabs .nav-link.active,
+.testimonial .nav-tabs .nav-link {
+    border: unset;
+    border-radius: unset;
+    background-color: transparent;
+}
+
+.testimonial .nav-tabs {
+    border: unset;
+    border-radius: unset;
+}
+
+.testimonial .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: unset;
+    border-radius: unset;
+    isolation:unset;
+}
+
+.testimonial .nav-tabs {
+    padding: 20px 0px;
+    border-top: 1px solid #c0ccd3;
+    border-bottom: 1px solid #c0ccd3;
 }
