@@ -205,3 +205,16 @@ if($(window).width() < 767){
     $(".youtube").colorbox({iframe:true, innerWidth:320, innerHeight:250});
     $(".group2").colorbox({rel:'group2',innerWidth:320, innerHeight:250});
 }
+
+
+// Mixit Up
+var containerEl = document.querySelector('.mixit-up');
+var mixer = mixitup(containerEl);
+
+var filterButtons = document.querySelectorAll('.filter-button');
+filterButtons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    var filterValue = button.getAttribute('data-filter');
+    mixer.filter(filterValue);
+  });
+});
