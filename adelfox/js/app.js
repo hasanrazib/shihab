@@ -218,3 +218,20 @@ filterButtons.forEach(function (button) {
     mixer.filter(filterValue);
   });
 });
+
+
+// Get all the buttons
+var buttons = document.querySelectorAll('.menu-item');
+
+// Add a click event listener to each button
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Remove the active class from all buttons
+    buttons.forEach(function(btn) {
+      btn.classList.remove('active');
+    });
+
+    // Add the active class to the clicked button
+    this.classList.add('active');
+  });
+});

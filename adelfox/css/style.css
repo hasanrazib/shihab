@@ -890,12 +890,13 @@ div[role="progressbar"]::before {
 }
 
 
-.feature-product-list li button{
-    color: #a7b6c1;
-    padding: 10px;
+.menu-item{
+    color: #bbc7cf;
+    padding: 6px;
     border-radius: 5px;
     border: none;
     text-transform: capitalize;
+    font-size: 14px;
 }
 
 .feature-product-list li::before{
@@ -2316,4 +2317,9 @@ select {
     padding: 20px 0px;
     border-top: 1px solid #c0ccd3;
     border-bottom: 1px solid #c0ccd3;
+}
+
+.active {
+    color: #fff;
+    background-color: #21c2f8;
 }
