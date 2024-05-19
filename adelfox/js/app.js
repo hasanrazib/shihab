@@ -220,18 +220,78 @@ filterButtons.forEach(function (button) {
 });
 
 
+
+// Portfolio Feature card menu items
 // Get all the buttons
 var buttons = document.querySelectorAll('.menu-item');
+
+// // Add a click event listener to each button
+// buttons.forEach(function(button) {
+//   button.addEventListener('click', function() {
+//     // Remove the active class from all buttons
+//     buttons.forEach(function(btn) {
+//       btn.classList.remove('list-active');
+//     });
+
+//     // Add the active class to the clicked button
+//     this.classList.add('list-active');
+//   });
+// });
+
+
 
 // Add a click event listener to each button
 buttons.forEach(function(button) {
   button.addEventListener('click', function() {
     // Remove the active class from all buttons
     buttons.forEach(function(btn) {
-      btn.classList.remove('active');
+      btn.classList.remove('list-active');
     });
 
     // Add the active class to the clicked button
-    this.classList.add('active');
+    this.classList.add('list-active');
+
+    // Get all the parent elements
+    const parents = document.querySelectorAll('.owl-item');
+
+// Loop through each parent element
+parents.forEach(parent => {
+  // Get the child element
+  const child = parent.querySelector('.mix');
+
+  // Check if the child element has inline style display: none
+  if (child && child.style.display === 'none') {
+    // Apply display: none to the parent element
+    parent.style.display = 'none';
+    child.setAttribute('el-none', 'none');
+  } 
+  else if (child && child.getAttribute('el-none') === 'none') {
+    // Apply display: none to the parent element
+    parent.style.display = 'block';
+    child.style = ' ';
+    child.setAttribute('el-none', ' ');
+  }
+});
+
   });
 });
+
+
+// // Get all the parent elements
+// const parents = document.querySelectorAll('.owl-item');
+
+// // Loop through each parent element
+// parents.forEach(parent => {
+//   // Get the child element
+//   const child = parent.querySelector('.mix');
+
+//   // Check if the child element has inline style display: none
+//   if (child && child.style.display === 'none') {
+//     // Apply display: none to the parent element
+//     parent.style.display = 'none';
+//   } 
+//   // else if (child && !child.style === '') {
+//   //   // Apply display: none to the parent element
+//   //   parent.style.display = 'block';
+//   // }
+// });

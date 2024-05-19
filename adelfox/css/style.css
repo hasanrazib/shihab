@@ -186,7 +186,7 @@ div[role="progressbar"]::before {
     padding: 6px 0px;
     margin-left: 30px;
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .list-type-tic li::before {
@@ -777,8 +777,9 @@ div[role="progressbar"]::before {
 .subhero-slider .owl-carousel .owl-nav .owl-prev{
     position: absolute;
     top: 50%;
-    left: -6%;
-    transform: translate(6%, -50%);
+    left: -10%;
+    transform: translateY(-50%);
+    /* transform: translate(6%, -50%); */
     border: 1px solid #0072a5;
     width: 50px;
     height: 50px;
@@ -788,8 +789,9 @@ div[role="progressbar"]::before {
 .subhero-slider .owl-carousel .owl-nav .owl-next{
     position: absolute;
     top: 50%;
-    right: -5.5%;
-    transform: translate(5.5%, -50%);
+    right: -10%;
+    transform: translateY(-50%);
+    /* transform: translate(5.5%, -50%); */
     border: 1px solid #0072a5;
     width: 50px;
     height: 50px;
@@ -829,6 +831,7 @@ div[role="progressbar"]::before {
 .sr-card-content p{
     font-size: 13px;
     color: #b0bfc8;
+    padding-bottom: 20px;
 }
 .image-bottom-shape {
     position: absolute;
@@ -885,7 +888,7 @@ div[role="progressbar"]::before {
     text-transform: capitalize;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
@@ -1192,7 +1195,7 @@ div[role="progressbar"]::before {
     Footer Section
     ==========================================================================  */
 .footer-social {
-    border: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 .footer-social-icons {
     padding: 30px 0px;
@@ -1365,6 +1368,18 @@ div[role="progressbar"]::before {
     background: transparent;
 }
 
+#portfolio-inner.owl-carousel .owl-stage-outer {
+    /* height: 430px; */
+}
+
+#portfolio-inner.owl-carousel .owl-item {
+    /* height: 430px; */
+}
+
+#portfolio-inner img{
+    height: 100%;
+}
+
 /*  ==========================================================================
     Error Page
     ==========================================================================  */
@@ -1390,7 +1405,6 @@ div[role="progressbar"]::before {
     position: relative;
     width: 100%;
     max-width: 450px;
-    width: 60%;
     margin: auto;
 }
 
@@ -1940,6 +1954,32 @@ div[role="progressbar"]::before {
     border-right: 1px solid #e1e4e7;
 }
 
+.page-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-action a {
+    font-size: 13px;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    color: #bbc7cf;
+}
+
+.page-action i {
+    font-size: 13px;
+    color: #bbc7cf;
+    padding: 4px;
+    border: 2px solid #bbc7cf;
+    border-radius: 50%;
+}
+
+.page-action a:hover,
+.page-action a:hover i{
+    color: #21c2f8;
+    border-color: inherit;
+}
+
 
 /*  ==========================================================================
     About Page
@@ -2161,7 +2201,18 @@ div[role="progressbar"]::before {
 
 select {
     font-family: 'FontAwesome', 'Second Font name';
-    /* color: red; */
+    color: #21c2f8;
+    padding: 5px 10px;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    outline: none;
+}
+
+option:nth-child(2) {
+    color: blue;
+}
+option:nth-child(3) {
+    color: red;
 }
 
 .blog-tags {
@@ -2202,8 +2253,17 @@ select {
 }
 
 .comments {
-    border-bottom: 1px solid #a4b1ba;
+    border-bottom: 1px solid #ebebeb;
     margin-bottom: 10px;
+    padding: 14px 0px;
+}
+
+.sub-comments {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+    padding: 14px 0px;
+    width: 80%;
+    margin-left: 20%;
 }
 .comment-content {
     
@@ -2260,7 +2320,7 @@ select {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 20px 0px;
+    padding-bottom: 20px;
 }
 
 .testimonial-by {
@@ -2300,11 +2360,13 @@ select {
     border: unset;
     border-radius: unset;
     background-color: transparent;
+    /* justify-content: center; */
 }
 
 .testimonial .nav-tabs {
     border: unset;
     border-radius: unset;
+    justify-content: center;
 }
 
 .testimonial .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
@@ -2319,7 +2381,7 @@ select {
     border-bottom: 1px solid #c0ccd3;
 }
 
-.active {
+.list-active {
     color: #fff;
     background-color: #21c2f8;
 }
