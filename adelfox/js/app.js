@@ -15,6 +15,14 @@ $('#hero').owlCarousel({
 
 })
 
+$('#blog-inner-post').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    items: 1,
+    dots: false,
+})
+
 $('.blog-post-slider').owlCarousel({
     loop:true,
     margin:0,

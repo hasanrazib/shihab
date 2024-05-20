@@ -131,8 +131,14 @@ body {
 	.testimonial-card {
 		display: block;
 	}
+	.blog-comments,
+	.blog-tags {
+		display: initial;
+	}
 
-
+	/* .blog-container {
+		flex-direction: row;
+	} */
 
 }
 /* Wide Mobile Layout: 480px. */
