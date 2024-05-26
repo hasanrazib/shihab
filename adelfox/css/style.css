@@ -562,12 +562,16 @@ div[role="progressbar"]::before {
 }
 
 .sub-menu li a{
-    color: #fff;
+    color: #6a6a6a;
     display: block;
     padding: 20px 10px;
 }
 .sub-menu li:hover {
-    background-color: #8fcaee;
+    background-color: #13c4f9;
+}
+
+.sub-menu li:hover > a {
+    color: #fff;
 }
 
 .sub-menu, 
@@ -578,10 +582,10 @@ div[role="progressbar"]::before {
     display: block;
     position: absolute;
     width: 220px;
-    background: #0072a5;
+    background: #fff;
     top: 100%;
     left: 0;
-    border: 1px solid #000;
+    border: 1px solid #fff;
 }
 .desktop-menu li .sub-menu li:hover .sub-sub-menu {
     display: block;
@@ -736,7 +740,8 @@ div[role="progressbar"]::before {
 }
 .subhero-card h6{
     font-size: 15px;
-    color: #fff;
+    /* color: #fff; */
+    /* color: #fff; */
     text-transform: capitalize;
     padding: 10px 0px;
     opacity: 0;
@@ -2517,3 +2522,8 @@ option:nth-child(3) {
     width: 90%;
     margin: auto;
   } */
+
+
+.subhero-slider .active:first-child .subhero-card {
+    color: red;
+}

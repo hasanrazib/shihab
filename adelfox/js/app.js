@@ -43,8 +43,9 @@ $('#sub-hero').owlCarousel({
     margin: 0,
     nav:true,
     dots: false,
+    stagePadding: 30,
     // autoWidth: true,
-    center: false,
+    // center: true,
     responsive:{
       0:{
           items:1
@@ -53,13 +54,16 @@ $('#sub-hero').owlCarousel({
           items:2
       },
       700:{
-          items:3
+          items:2
       },
       1000:{
+          items:3
+      },
+      1400:{
           items:4
       },
-      1200:{
-          items:5
+      2000:{
+          items:7
       }
   }
 })
